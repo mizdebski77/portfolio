@@ -40,7 +40,7 @@ export const Role = styled.h2`
 `;
 
 export const Text = styled.p`
-    font-size: 24px;
+    font-size: 20px;
     color: ${theme.color.fontColor};
     font-weight: 200;
     text-align: justify;
@@ -48,25 +48,30 @@ export const Text = styled.p`
     letter-spacing: 2px;
 `;
 
-export const ImageSection = styled.div`
-
+export const ContactIconsWrapper = styled.div`
+    
 `;
 
-export const ImageWrapper =styled.div`
-    background-image: url();
+export const ImageWrapper = styled.div`
     border: 1px solid white;
     display: flex;
     justify-content: center;
+    align-items: end;
     border-radius: 100%;
     overflow: hidden;
+    max-width: 560px;
+    padding: 40px;
     width: 100%;
     aspect-ratio: 1;
+    position: relative;
 `;
 
 export const Image = styled.img`
     margin: 0 auto;
     max-width: 520px;
     width: 100%;
+    position: absolute;
+    bottom: 0px;
 `;
 
 export const Button = styled.button`

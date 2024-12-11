@@ -1,7 +1,5 @@
-import React from "react";
 import {
     Image,
-    ImageSection,
     ImageWrapper,
     Role,
     Text,
@@ -11,6 +9,7 @@ import {
 } from "./styledHero";
 import { TypeAnimation } from "react-type-animation";
 import profile from "../../common/Images/profile.png";
+import { motion } from "framer-motion";
 
 export const Hero = () => {
     return (
@@ -24,8 +23,22 @@ export const Hero = () => {
                         repeat={Infinity}
                     />
                 </Title>
-                <Role>Frontend / Mobile App developer</Role>
-                <Text>
+                <Role
+                    as={motion.h2}
+                    initial={{ x: "-30%", opacity: 0 }}
+                    whileInView={{ x: 0, opacity: 1 }}
+                    viewport={{ once: false }}
+                    transition={{ duration: 1 }}
+                >
+                    Frontend / Mobile App developer
+                </Role>
+                <Text
+                    as={motion.p}
+                    initial={{ y: "30%", opacity: 0 }}
+                    whileInView={{ y: 0, opacity: 1 }}
+                    viewport={{ once: false }}
+                    transition={{ duration: 1 }}
+                >
                     I'm an enthusiastic Frontend Developer with a strong passion
                     for new technologies and a deep commitment to learning
                     React. I am highly motivated and thrive on being a fast
@@ -35,11 +48,15 @@ export const Hero = () => {
                 </Text>
             </TextSection>
 
-            <ImageSection>
-                <ImageWrapper>
-                    <Image src={profile} alt="Profile" />
-                </ImageWrapper>
-            </ImageSection>
+            <ImageWrapper
+                as={motion.div}
+                initial={{ x: "30%", opacity: 0 }}
+                whileInView={{ x: 0, opacity: 1 }}
+                viewport={{ once: false }}
+                transition={{ duration: 1 }}
+            >
+                <Image src={profile} alt="Profile" />
+            </ImageWrapper>
         </Wrapper>
     );
 };
