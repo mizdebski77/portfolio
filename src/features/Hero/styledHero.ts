@@ -14,6 +14,8 @@ export const Wrapper = styled.div`
     gap: 40px;
     overflow: hidden;
     background: radial-gradient(circle, rgba(21,69,70,0.36738445378151263) 7%, rgba(38,89,195,0) 87%);
+    position: relative;
+    top: 0;
 `;
 
 export const TextSection = styled.div`
