@@ -8,7 +8,8 @@ interface VantaEffectInstance {
 
 const VantaWrapper = styled.div`
     height: 100vh;
-    width: 100vw;
+    max-width: 100vw;
+    width: 100%;
     position: absolute;
     opacity: 0.1;
 `;

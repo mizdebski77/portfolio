@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { theme } from "../../core/theme";
 
-export const SkewCurtainButton = styled.button`
+export const Button = styled.button`
     position: relative;
     gap: 12px;
     height: 3rem;
@@ -47,4 +47,11 @@ export const ButtonContent = styled.span`
     gap: 12px;
     position: relative;
     z-index: 2;
+`;
+
+export const Title = styled.h3`
+    font-size: 64px;
+    font-weight: inherit;
+    color: ${theme.palette.fontColor};
+    text-align: center;
 `;

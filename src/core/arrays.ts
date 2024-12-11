@@ -1,3 +1,5 @@
+import { FolderOpenDot, Mail } from "lucide-react";
+
 export const socialLinks = [
     { name: 'GitHub', href: 'https://github.com/mizdebski77', bg: '#242551' },
     { name: 'Facebook', href: 'https://www.facebook.com/marcin.izdebski.7528', bg: '#1476ff' },
@@ -5,3 +7,7 @@ export const socialLinks = [
     { name: 'LinkedIn', href: 'https://www.linkedin.com/in/marcin-izdebski-63b7a026a/', bg: '#14adff' },
 ];
 
+export const heroButtons = [
+    { name: 'Contact', icon: Mail },
+    { name: 'Projects', icon: FolderOpenDot }
+]

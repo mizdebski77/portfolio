@@ -1,12 +1,10 @@
 import {
-    ButtonContent,
     ButtonsWrapper,
     ContactIconsWrapper,
     Image,
     ImageWrapper,
     Link,
     Role,
-    SkewCurtainButton,
     Text,
     TextSection,
     Title,
@@ -15,9 +13,10 @@ import {
 import { TypeAnimation } from "react-type-animation";
 import profile from "../../common/Images/profile.png";
 import { motion } from "framer-motion";
-import { socialLinks } from "../../core/arrays";
+import { heroButtons, socialLinks } from "../../core/arrays";
 import VantaEffect from "../../core/vanta";
 import { FolderOpenDot, Mail } from "lucide-react";
+import { ButtonContent, Button } from "../components/components";
 
 export const Hero = () => {
     return (
@@ -57,6 +56,7 @@ export const Hero = () => {
                         new job opportunities to further enhance my skills and
                         contribute to innovative projects.
                     </Text>
+
                     <ContactIconsWrapper>
                         {socialLinks.map((link, index) => (
                             <motion.div
@@ -83,21 +83,27 @@ export const Hero = () => {
                         ))}
                     </ContactIconsWrapper>
 
-                    <ButtonsWrapper>
-                        <SkewCurtainButton>
-                            <ButtonContent>
-                                <Mail />
-                                <span>Contact</span>
-                            </ButtonContent>
-                        </SkewCurtainButton>
-
-                        <SkewCurtainButton>
-                            <ButtonContent>
-                                <FolderOpenDot />
-                                <span>Projects</span>
-                            </ButtonContent>
-                        </SkewCurtainButton>
-                    </ButtonsWrapper>
+                    {/* <ButtonsWrapper>
+                        {heroButtons.map((button, index) => (
+                            <Button
+                                as={motion.button}
+                                initial={{ opacity: 0, y: "-100vh" }}
+                                animate={{ opacity: 1, y: 0 }}
+                                transition={{
+                                    duration: 1,
+                                    delay: index * 0.2,
+                                    type: "spring",
+                                    bounce: 0.4,
+                                }}
+                                key={button.name}
+                            >
+                                <ButtonContent>
+                                    <button.icon />
+                                    <span>{button.name}</span>
+                                </ButtonContent>
+                            </Button>
+                        ))}
+                    </ButtonsWrapper> */}
                 </TextSection>
 
                 <ImageWrapper

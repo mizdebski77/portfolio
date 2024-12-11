@@ -1,10 +1,10 @@
-import React from 'react';
+import React from "react";
+import { Wrapper } from "./styledPortfolio";
+import { Title } from "../components/components";
 
 export const Portfolio = () => {
     return (
-        <div>
-            
-        </div>
+        <Wrapper>
+        </Wrapper>
     );
 };
-

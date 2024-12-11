@@ -32,7 +32,7 @@ export const TextSection = styled.div`
     display: grid;
     align-items: center;
     justify-content: center;
-    gap: 32px;
+    gap: 40px;
 
     @media (max-width: ${theme.breakPoints.mobileMd}px){
         gap: 20px;
