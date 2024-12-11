@@ -1,7 +1,6 @@
 import styled from 'styled-components'
 import { theme } from '../../core/theme';
 import { SocialIcon } from 'react-social-icons';
-import bg from '../../common/Images/sas.jpg';
 
 
 export const Wrapper = styled.div`
@@ -105,9 +104,6 @@ export const Link = styled(SocialIcon)`
 
 export const ImageWrapper = styled.div`
     border: 1px solid white;
-    /* background-image: url(${bg});
-    background-position: center;
-    background-size: cover; */
     background: rgba(17, 55 ,61, 0.5);
     display: flex;
     justify-content: center;
