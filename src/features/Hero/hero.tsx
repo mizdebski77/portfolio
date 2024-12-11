@@ -1,6 +1,8 @@
 import {
+    ContactIconsWrapper,
     Image,
     ImageWrapper,
+    Link,
     Role,
     Text,
     TextSection,
@@ -9,7 +11,8 @@ import {
 } from "./styledHero";
 import { TypeAnimation } from "react-type-animation";
 import profile from "../../common/Images/profile.png";
-import { motion } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
+import { socialLinks } from "../../core/arrays";
 
 export const Hero = () => {
     return (
@@ -46,6 +49,31 @@ export const Hero = () => {
                     opportunities to further enhance my skills and contribute to
                     innovative projects.
                 </Text>
+                <ContactIconsWrapper>
+                    {socialLinks.map((link, index) => (
+                        <motion.div
+                            initial={{ opacity: 0, y: "-100vh" }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{
+                                duration: 1,
+                                delay: index * 0.2,
+                                type: "spring",
+                                bounce: 0.4,
+                            }}
+                            key={link.name}
+                        >
+                            <Link
+                                style={{
+                                    filter: `drop-shadow(0px 0px 8px ${link.bg})`,
+                                }}
+                                href={link.href}
+                                target="_blank"
+                                url={link.href}
+                                bgColor={link.bg}
+                            />
+                        </motion.div>
+                    ))}
+                </ContactIconsWrapper>
             </TextSection>
 
             <ImageWrapper

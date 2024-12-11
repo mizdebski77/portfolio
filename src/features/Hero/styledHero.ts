@@ -1,16 +1,19 @@
 import styled from 'styled-components'
 import { theme } from '../../core/theme';
+import { SocialIcon } from 'react-social-icons';
 
 export const Wrapper = styled.div`
     min-height: 100vh;
     display: grid;
-    max-width: 1920px;
+    max-width: 1500px;
     margin: 0 auto;
     grid-template-columns: 1fr 1fr;
     align-items: center;
     justify-content: center;
     padding: 40px;
-    gap: 80px;
+    gap: 40px;
+    overflow: hidden;
+    background: radial-gradient(circle, rgba(21,69,70,0.36738445378151263) 7%, rgba(38,89,195,0) 87%);
 `;
 
 export const TextSection = styled.div`
@@ -49,7 +52,20 @@ export const Text = styled.p`
 `;
 
 export const ContactIconsWrapper = styled.div`
-    
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    max-width: 400px;
+    width: 100%;
+    margin: 0 ;
+`;
+
+export const Link = styled(SocialIcon)`
+    transition: 0.3s;
+
+    &:hover {
+        transform: translateY(-5px);
+    }
 `;
 
 export const ImageWrapper = styled.div`
@@ -64,6 +80,9 @@ export const ImageWrapper = styled.div`
     width: 100%;
     aspect-ratio: 1;
     position: relative;
+    margin: auto;
+    box-shadow: 10px -100px 120px  10px #11373d;
+    z-index: 10;
 `;
 
 export const Image = styled.img`
@@ -71,7 +90,7 @@ export const Image = styled.img`
     max-width: 520px;
     width: 100%;
     position: absolute;
-    bottom: 0px;
+    bottom: 0px;   
 `;
 
 export const Button = styled.button`
