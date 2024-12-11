@@ -1,6 +1,8 @@
 import styled from 'styled-components'
 import { theme } from '../../core/theme';
 import { SocialIcon } from 'react-social-icons';
+import bg from '../../common/Images/sas.jpg';
+
 
 export const Wrapper = styled.div`
     min-height: 100vh;
@@ -90,7 +92,6 @@ export const ContactIconsWrapper = styled.div`
 
     @media (max-width: ${theme.breakPoints.mobileMd}px){
         gap: 8px;
-        flex-wrap: ;
     };
 `;
 
@@ -103,7 +104,11 @@ export const Link = styled(SocialIcon)`
 `;
 
 export const ImageWrapper = styled.div`
-    border: 2px solid white;
+    border: 1px solid white;
+    /* background-image: url(${bg});
+    background-position: center;
+    background-size: cover; */
+    background: rgba(17, 55 ,61, 0.5);
     display: flex;
     justify-content: center;
     align-items: end;
