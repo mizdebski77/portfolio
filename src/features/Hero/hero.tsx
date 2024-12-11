@@ -60,8 +60,9 @@ export const Hero = () => {
                     <ContactIconsWrapper>
                         {socialLinks.map((link, index) => (
                             <motion.div
-                                initial={{ opacity: 0, y: "-100vh" }}
-                                animate={{ opacity: 1, y: 0 }}
+                                initial={{ opacity: 0, x: "-100vh" }}
+                                animate={{ opacity: 1, x: 0 }}
+                                viewport={{ once: false }}
                                 transition={{
                                     duration: 1,
                                     delay: index * 0.2,
@@ -87,13 +88,13 @@ export const Hero = () => {
                         {heroButtons.map((button, index) => (
                             <Button
                                 as={motion.button}
-                                initial={{ opacity: 0, y: "40%" }}
-                                animate={{ opacity: 1, y: 0 }}
+                                initial={{ y: "100vh" }}
+                                animate={{ y: 0 }}
+                                viewport={{ once: false }}
                                 transition={{
                                     duration: 1,
                                     delay: index * 0.2,
-                                    type: "spring",
-                                    bounce: 0.4,
+
                                 }}
                                 key={button.name}
                             >
