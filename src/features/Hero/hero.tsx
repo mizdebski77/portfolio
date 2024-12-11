@@ -1,6 +1,16 @@
 import React from "react";
-import { Role, Text, TextSection, Title, Wrapper } from "./styledHero";
+import {
+    Image,
+    ImageSection,
+    ImageWrapper,
+    Role,
+    Text,
+    TextSection,
+    Title,
+    Wrapper,
+} from "./styledHero";
 import { TypeAnimation } from "react-type-animation";
+import profile from "../../common/Images/profile.png";
 
 export const Hero = () => {
     return (
@@ -24,6 +34,12 @@ export const Hero = () => {
                     innovative projects.
                 </Text>
             </TextSection>
+
+            <ImageSection>
+                <ImageWrapper>
+                    <Image src={profile} alt="Profile" />
+                </ImageWrapper>
+            </ImageSection>
         </Wrapper>
     );
 };

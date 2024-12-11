@@ -4,10 +4,13 @@ import { theme } from '../../core/theme';
 export const Wrapper = styled.div`
     min-height: 100vh;
     display: grid;
+    max-width: 1920px;
+    margin: 0 auto;
     grid-template-columns: 1fr 1fr;
     align-items: center;
     justify-content: center;
     padding: 40px;
+    gap: 80px;
 `;
 
 export const TextSection = styled.div`
@@ -42,10 +45,28 @@ export const Text = styled.p`
     font-weight: 200;
     text-align: justify;
     margin: 0;
+    letter-spacing: 2px;
+`;
+
+export const ImageSection = styled.div`
+
+`;
+
+export const ImageWrapper =styled.div`
+    background-image: url();
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    border-radius: 100%;
+    overflow: hidden;
+    width: 100%;
+    aspect-ratio: 1;
 `;
 
 export const Image = styled.img`
-    
+    margin: 0 auto;
+    max-width: 520px;
+    width: 100%;
 `;
 
 export const Button = styled.button`
