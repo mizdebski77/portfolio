@@ -1,10 +1,11 @@
-
+import { Hero } from "../features/Hero/hero";
 
 function App() {
-
-  return (
-    <div>Hello</div>
-  )
+    return (
+        <>
+            <Hero />
+        </>
+    );
 }
 
-export default App
+export default App;
