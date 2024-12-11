@@ -133,6 +133,51 @@ export const Image = styled.img`
     position: absolute;
 `;
 
-export const Button = styled.button`
+export const ButtonsWrapper = styled.div`
+    display: flex;
+    
+`;
 
+export const SkewCurtainButton = styled.button`
+    position: relative;
+    height: 3rem;
+    width: 10rem;
+    overflow: hidden;
+    border: 1px solid #3b82f6;
+    color: #3b82f6;
+    background-color: transparent;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2), 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: color 0.3s, box-shadow 0.3s;
+    border-radius: 12px;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: -50%;
+        width: 200%;
+        height: 0;
+        background-color: #3b82f6;
+        transform: translateY(-50%) rotate(45deg);
+        transition: height 0.3s ease, transform 0.3s ease;
+        z-index: 1;
+        color: white;
+    }
+
+    &:hover {
+        cursor: pointer;
+        color: white;
+        box-shadow: 0 4px 6px rgba(59, 130, 246, 0.5), 0 1px 3px rgba(59, 130, 246, 0.3); 
+    }
+
+    &:hover::before {
+        height: 320%;
+        transform: translateY(-50%) rotate(45deg);
+        color: white;
+    }
+
+    span {
+        position: relative;
+        z-index: 2;
+    }
 `;

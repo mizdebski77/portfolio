@@ -1,9 +1,11 @@
 import {
+    ButtonsWrapper,
     ContactIconsWrapper,
     Image,
     ImageWrapper,
     Link,
     Role,
+    SkewCurtainButton,
     Text,
     TextSection,
     Title,
@@ -14,6 +16,7 @@ import profile from "../../common/Images/profile.png";
 import { motion } from "framer-motion";
 import { socialLinks } from "../../core/arrays";
 import VantaEffect from "../../core/vanta";
+import { Mail } from "lucide-react";
 
 export const Hero = () => {
     return (
@@ -78,6 +81,17 @@ export const Hero = () => {
                             </motion.div>
                         ))}
                     </ContactIconsWrapper>
+
+                    <ButtonsWrapper>
+                        <SkewCurtainButton>
+                            <Mail/>
+                            <span>Contact</span>
+                        </SkewCurtainButton>
+
+                        <SkewCurtainButton>
+                            <span>Projects</span>
+                        </SkewCurtainButton>
+                    </ButtonsWrapper>
                 </TextSection>
 
                 <ImageWrapper
