@@ -11,7 +11,7 @@ import {
 } from "./styledHero";
 import { TypeAnimation } from "react-type-animation";
 import profile from "../../common/Images/profile.png";
-import { AnimatePresence, motion } from "framer-motion";
+import { motion } from "framer-motion";
 import { socialLinks } from "../../core/arrays";
 import VantaEffect from "../../core/vanta";
 

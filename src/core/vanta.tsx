@@ -21,7 +21,7 @@ const VantaEffect: React.FC = () => {
     useEffect(() => {
         const loadVanta = async () => {
             // @ts-ignore
-            const VANTA = await import("vanta/dist/vanta.globe.min");
+            const VANTA = await import("vanta/dist/vanta.net.min");
             vantaEffectInstance.current = VANTA.default({
                 el: vantaRef.current,
                 THREE,
