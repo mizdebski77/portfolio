@@ -1,4 +1,5 @@
 import {
+    ButtonContent,
     ButtonsWrapper,
     ContactIconsWrapper,
     Image,
@@ -16,7 +17,7 @@ import profile from "../../common/Images/profile.png";
 import { motion } from "framer-motion";
 import { socialLinks } from "../../core/arrays";
 import VantaEffect from "../../core/vanta";
-import { Mail } from "lucide-react";
+import { FolderOpenDot, Mail } from "lucide-react";
 
 export const Hero = () => {
     return (
@@ -84,12 +85,17 @@ export const Hero = () => {
 
                     <ButtonsWrapper>
                         <SkewCurtainButton>
-                            <Mail/>
-                            <span>Contact</span>
+                            <ButtonContent>
+                                <Mail />
+                                <span>Contact</span>
+                            </ButtonContent>
                         </SkewCurtainButton>
 
                         <SkewCurtainButton>
-                            <span>Projects</span>
+                            <ButtonContent>
+                                <FolderOpenDot />
+                                <span>Projects</span>
+                            </ButtonContent>
                         </SkewCurtainButton>
                     </ButtonsWrapper>
                 </TextSection>

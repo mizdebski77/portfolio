@@ -42,7 +42,7 @@ export const TextSection = styled.div`
 export const Title = styled.h1`
     font-size: 96px;
     font-weight: normal;
-    color: ${theme.color.fontColor};
+    color: ${theme.palette.fontColor};
     font-weight: 100;
     text-align: center;
     width: 600px;
@@ -57,7 +57,7 @@ export const Title = styled.h1`
 export const Role = styled.h2`
     font-size: 32px;
     font-weight: 300;
-    background: linear-gradient(to right, #195a58 0%, #ffffff 100%);
+    background: linear-gradient(to right, #14adff 0%, #ffffff 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin: 0;
@@ -70,7 +70,7 @@ export const Role = styled.h2`
 
 export const Text = styled.p`
     font-size: 20px;
-    color: ${theme.color.fontColor};
+    color: ${theme.palette.fontColor};
     font-weight: 200;
     text-align: justify;
     margin: 0;
@@ -103,8 +103,8 @@ export const Link = styled(SocialIcon)`
 `;
 
 export const ImageWrapper = styled.div`
-    border: 1px solid white;
-    background: rgba(17, 55 ,61, 0.5);
+    border: 1px solid ${theme.palette.fontColor};
+    background: ${theme.palette.secondColor2};
     display: flex;
     justify-content: center;
     align-items: end;
@@ -116,7 +116,7 @@ export const ImageWrapper = styled.div`
     aspect-ratio: 1;
     position: relative;
     margin: auto;
-    box-shadow: 10px -60px 120px  10px #11373d;
+    box-shadow: 10px -60px 120px  5px ${theme.palette.secondColor6};
     z-index: 10;
 
     @media (max-width: ${theme.breakPoints.mobileMd}px){
@@ -135,16 +135,19 @@ export const Image = styled.img`
 
 export const ButtonsWrapper = styled.div`
     display: flex;
-    
+    justify-content: start;
+    align-items: center;
+    gap: 24px;
 `;
 
 export const SkewCurtainButton = styled.button`
     position: relative;
+    gap: 12px;
     height: 3rem;
     width: 10rem;
     overflow: hidden;
-    border: 1px solid #3b82f6;
-    color: #3b82f6;
+    border: 1px solid ${theme.palette.secondColor};
+    color: ${theme.palette.secondColor};
     background-color: transparent;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2), 0 1px 3px rgba(0, 0, 0, 0.1);
     transition: color 0.3s, box-shadow 0.3s;
@@ -157,11 +160,10 @@ export const SkewCurtainButton = styled.button`
         left: -50%;
         width: 200%;
         height: 0;
-        background-color: #3b82f6;
+        background: ${theme.palette.secondColor};
         transform: translateY(-50%) rotate(45deg);
         transition: height 0.3s ease, transform 0.3s ease;
         z-index: 1;
-        color: white;
     }
 
     &:hover {
@@ -175,9 +177,13 @@ export const SkewCurtainButton = styled.button`
         transform: translateY(-50%) rotate(45deg);
         color: white;
     }
+`;
 
-    span {
-        position: relative;
-        z-index: 2;
-    }
+export const ButtonContent = styled.span`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    position: relative;
+    z-index: 2;
 `;
