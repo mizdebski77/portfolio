@@ -12,7 +12,7 @@ html {
   }
 
   body {
-    background: red;
+    background: #06061a;
     font-family: "Inter", sans-serif;
 
   }
