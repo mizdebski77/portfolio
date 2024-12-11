@@ -13,5 +13,7 @@ html {
 
   body {
     background: red;
+    font-family: "Inter", sans-serif;
+
   }
 `;
