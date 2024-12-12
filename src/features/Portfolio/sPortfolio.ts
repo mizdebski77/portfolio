@@ -72,10 +72,6 @@ export const SectionTitle = styled.h4<{ active?: boolean }>`
     `}
 `;
 
-
-
-
-
 export const ProjectCard = styled.div`
     display: flex;
     border-radius: 12px;
@@ -84,15 +80,64 @@ export const ProjectCard = styled.div`
     max-width: 1200px;
 `;
 
+export const ImgWrapper = styled.div`
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 60px 0px ${theme.palette.secondColor};
+    cursor: pointer;
+    max-width: 600px;
+    width: 100%;
+    height: auto;
+    border-radius: 12px ;
+    border: 2px solid ${theme.palette.secondColor};
+    
+    &:hover img {
+        transform: scale(1.1);
+    };
+
+    &:hover span {
+        opacity: 1;
+    };
+`;
+
+export const ImgText = styled.span`
+    transition: 0.3s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    z-index: 1;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    backdrop-filter: blur(2px);
+
+    &:hover {
+        opacity: 1;
+    }
+`;
+
+export const ProjectImage = styled.img`
+    opacity: 1;
+    display: block;
+    width: 100%;
+    transition: 0.3s ease;
+    object-fit: cover;
+`;
+
+
+
 export const Content = styled.div`
 
 `;
 
-export const ProjectImage = styled.img`
-    border-radius: 12px ;
-    max-width: 500px;
-    box-shadow: 0 0 60px 0px ${theme.palette.secondColor};
-`;
 
 export const TextWrapper = styled.div`
     padding: 20px;

@@ -1,6 +1,8 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import {
     Content,
+    ImgText,
+    ImgWrapper,
     LinksWrapper,
     ProjectArticle,
     ProjectCard,
@@ -15,7 +17,7 @@ import {
 } from "./sPortfolio";
 import { Title } from "../components/components";
 import proj from "../../common/Images/proj.png";
-import { ExternalLink } from "lucide-react";
+import { ExternalLink, Images } from "lucide-react";
 import { Fullscreen } from "./FullScreeen/fullscreen";
 
 export const Portfolio = () => {
@@ -84,10 +86,17 @@ export const Portfolio = () => {
 
                 {filteredProjects.map((project) => (
                     <ProjectCard key={project.id}>
-                        <ProjectImage
-                            onClick={() => setFullScreen(true)}
-                            src={project.image}
-                        />
+                        <ImgWrapper>
+                            <ImgText>
+                                <Images />
+                                View Gallery
+                            </ImgText>
+                            <ProjectImage
+                                onClick={() => setFullScreen(true)}
+                                src={project.image}
+                            />
+                        </ImgWrapper>
+
                         <Content>
                             <TextWrapper>
                                 <ProjectTitle>
