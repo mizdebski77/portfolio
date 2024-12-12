@@ -10,16 +10,17 @@ import {
     SectionTitle,
     Stack,
     StackWrapper,
-
     TextWrapper,
     Wrapper,
 } from "./sPortfolio";
 import { Title } from "../components/components";
 import proj from "../../common/Images/proj.png";
 import { ExternalLink } from "lucide-react";
+import { Fullscreen } from "./FullScreeen/fullscreen";
 
 export const Portfolio = () => {
     const [activeType, setActiveType] = useState("Web Applications");
+    const [fullScreen, setFullScreen] = useState(false);
 
     const projects = [
         {
@@ -58,7 +59,6 @@ export const Portfolio = () => {
     return (
         <Wrapper>
             <Title>Projects</Title>
-
             <Section>
                 <LinksWrapper>
                     <SectionTitle
@@ -80,17 +80,23 @@ export const Portfolio = () => {
                         Landing Pages
                     </SectionTitle>
                 </LinksWrapper>
+                {fullScreen && <Fullscreen setFullScreen={setFullScreen} />}
 
                 {filteredProjects.map((project) => (
                     <ProjectCard key={project.id}>
-                        <ProjectImage src={project.image} />
+                        <ProjectImage
+                            onClick={() => setFullScreen(true)}
+                            src={project.image}
+                        />
                         <Content>
                             <TextWrapper>
                                 <ProjectTitle>
                                     {project.title}
                                     <ExternalLink />
                                 </ProjectTitle>
-                                <ProjectArticle>{project.description}</ProjectArticle>
+                                <ProjectArticle>
+                                    {project.description}
+                                </ProjectArticle>
                             </TextWrapper>
                             <StackWrapper>
                                 {project.technologies.map((tech, index) => (
