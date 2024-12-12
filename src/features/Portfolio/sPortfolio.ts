@@ -94,7 +94,7 @@ export const ProjectCard = styled.div<{ reverse?: boolean }>`
     align-items: center;
     color: ${theme.palette.fontColor};
     gap: 40px;
-    max-width: 1200px;
+    max-width: 1000px;
 
     ${({ reverse }) => reverse && css`
         
@@ -248,7 +248,8 @@ export const ProjectTitle = styled.a`
 `;
 
 export const ProjectArticle = styled.p`
-    font-size: 18px;
+    font-size: 16px;
+    line-height: 20px;
     font-weight: 200;
     color: ${theme.palette.fontColor};
     text-align: justify;
@@ -258,7 +259,7 @@ export const StackWrapper = styled.div`
     display: flex; 
     justify-content: start;
     flex-wrap: wrap;
-    gap: 32px;
+    gap: 28px;
     row-gap: 20px;
 
     @media (max-width: ${theme.breakPoints.mobileMd}px) {
@@ -267,7 +268,7 @@ export const StackWrapper = styled.div`
 `;
 
 export const Stack = styled.span`
-    font-size: 18px;
+    font-size: 16px;
     color: ${theme.palette.fontColor};
     background: ${theme.palette.thirdColor};
     padding: 8px 12px;

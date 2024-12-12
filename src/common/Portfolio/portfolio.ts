@@ -16,7 +16,6 @@ export const projects = [
         thumbnaill: 'https://jeiqdktodpczzgzkiocp.supabase.co/storage/v1/object/public/Portfolio/YCM.png',
         liveUrl: 'https://ycm-orcin.vercel.app/',
         codeUrl: '',
-        APIlink: '',
     },
 
     {
@@ -35,7 +34,6 @@ export const projects = [
         image: 'https://jeiqdktodpczzgzkiocp.supabase.co/storage/v1/object/public/Portfolio/TrekShop.png',
         liveUrl: 'https://mizdebski77.github.io/Trek-Shop/',
         codeUrl: 'https://github.com/mizdebski77/Trek-Shop',
-        APIlink: 'https://trek-shop-database.onrender.com/',
     },
 
     {
@@ -54,7 +52,6 @@ export const projects = [
         image: 'https://jeiqdktodpczzgzkiocp.supabase.co/storage/v1/object/public/Portfolio/EasyEmploy.png',
         liveUrl: 'https://mizdebski77.github.io/Easy-Employ/',
         codeUrl: 'https://github.com/mizdebski77/Easy-Employ',
-        APIlink: 'https://esay-employ-database-wfsz.onrender.com/',
     },
 
     {
@@ -73,7 +70,6 @@ export const projects = [
         image: 'https://jeiqdktodpczzgzkiocp.supabase.co/storage/v1/object/public/Portfolio/MovieBorwser.png',
         liveUrl: 'https://mizdebski77.github.io/Movie-Browser/',
         codeUrl: 'https://github.com/mizdebski77/Movie-Browser',
-        APIlink: 'https://developer.themoviedb.org/docs/getting-started',
     },
 
     {
@@ -92,7 +88,6 @@ export const projects = [
         image: 'https://jeiqdktodpczzgzkiocp.supabase.co/storage/v1/object/public/Portfolio/WeatherApp.png',
         liveUrl: 'https://mizdebski77.github.io/Weather-React-Redux-App/',
         codeUrl: 'https://github.com/mizdebski77/Weather-React-Redux-App',
-        APIlink: 'https://www.weatherapi.com/',
     },
 
     {
@@ -110,7 +105,6 @@ export const projects = [
         image: 'https://jeiqdktodpczzgzkiocp.supabase.co/storage/v1/object/public/Portfolio/Crud.png',
         liveUrl: 'https://crudaplication.netlify.app/',
         codeUrl: '',
-        APIlink: '',
     },
 
     {
@@ -128,7 +122,6 @@ export const projects = [
         image: 'https://jeiqdktodpczzgzkiocp.supabase.co/storage/v1/object/public/Portfolio/tasksList.png',
         liveUrl: 'https://mizdebski77.github.io/Tasks-List-ReactJS/',
         codeUrl: 'https://github.com/mizdebski77/Tasks-List-ReactJS',
-        APIlink: '',
     },
 
     {
@@ -146,7 +139,6 @@ export const projects = [
         image: 'https://jeiqdktodpczzgzkiocp.supabase.co/storage/v1/object/public/Portfolio/Dish%20form.png',
         liveUrl: 'https://mizdebski77.github.io/Dish-Form/',
         codeUrl: 'https://github.com/mizdebski77/Dish-Form?tab=readme-ov-file',
-        APIlink: '',
     },
 
     {
@@ -164,6 +156,5 @@ export const projects = [
         image: 'https://jeiqdktodpczzgzkiocp.supabase.co/storage/v1/object/public/Portfolio/ta.png',
         liveUrl: 'https://mizdebski77.github.io/Training-App/',
         codeUrl: '',
-        APIlink: '',
     },
 ]
