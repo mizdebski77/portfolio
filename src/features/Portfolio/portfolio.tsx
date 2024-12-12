@@ -20,7 +20,8 @@ import { Images } from "lucide-react";
 import { Fullscreen } from "./FullScreeen/fullscreen";
 import { projectsLinks } from "../../core/arrays";
 import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
-import { projects } from "../../common/Portfolio/portfolio";
+import { projects } from "../../common/Arrays/portfolio";
+import { motion } from "framer-motion";
 
 export const Portfolio = () => {
     const [activeType, setActiveType] = useState("Web Applications");
@@ -47,10 +48,20 @@ export const Portfolio = () => {
                 </LinksWrapper>
                 {fullScreen && <Fullscreen setFullScreen={setFullScreen} />}
 
-                {filteredProjects.map((project) => (
-                    <ProjectCard key={project.id}>
+                {filteredProjects.map((project, index) => (
+                    <ProjectCard
+                        as={motion.div}
+                        initial={{
+                            x: index % 2 === 0 ? "30%" : "-30%",
+                            opacity: 0,
+                        }}
+                        whileInView={{ x: 0, opacity: 1 }}
+                        viewport={{ once: false }}
+                        transition={{ duration: 1 }}
+                        key={project.id}
+                    >
                         <div onClick={() => setFullScreen(true)}>
-                            <ImgWrapper>
+                            <ImgWrapper as={motion.div}>
                                 <ImgText>
                                     <Images />
                                     View Gallery

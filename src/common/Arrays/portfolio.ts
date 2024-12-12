@@ -124,22 +124,22 @@ export const projects = [
         codeUrl: 'https://github.com/mizdebski77/Tasks-List-ReactJS',
     },
 
-    {
-        id: 10,
-        name: 'Dish Form',
-        type: "Web Applications",
-        description: 'Dish Form is a simple project that enables users to upload information about specific dishes to a website. The form includes fields such as dish name, preparation time, dish type (pizza, soup, or sandwich to choose from), as well as details depending on the selected type, such as the number of slices, diameter, spiciness , or number of bread slices',
-        tags: [
-            'React',
-            'Styled-components',
-            'Redux',
-            'Html & Css',
-            'Git',
-        ],
-        image: 'https://jeiqdktodpczzgzkiocp.supabase.co/storage/v1/object/public/Portfolio/Dish%20form.png',
-        liveUrl: 'https://mizdebski77.github.io/Dish-Form/',
-        codeUrl: 'https://github.com/mizdebski77/Dish-Form?tab=readme-ov-file',
-    },
+    // {
+    //     id: 10,
+    //     name: 'Dish Form',
+    //     type: "Web Applications",
+    //     description: 'Dish Form is a simple project that enables users to upload information about specific dishes to a website. The form includes fields such as dish name, preparation time, dish type (pizza, soup, or sandwich to choose from), as well as details depending on the selected type, such as the number of slices, diameter, spiciness , or number of bread slices',
+    //     tags: [
+    //         'React',
+    //         'Styled-components',
+    //         'Redux',
+    //         'Html & Css',
+    //         'Git',
+    //     ],
+    //     image: 'https://jeiqdktodpczzgzkiocp.supabase.co/storage/v1/object/public/Portfolio/Dish%20form.png',
+    //     liveUrl: 'https://mizdebski77.github.io/Dish-Form/',
+    //     codeUrl: 'https://github.com/mizdebski77/Dish-Form?tab=readme-ov-file',
+    // },
 
     {
         id: 12,

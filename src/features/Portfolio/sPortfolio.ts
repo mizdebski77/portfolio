@@ -87,7 +87,7 @@ export const SectionTitle = styled.h4<{ active?: boolean }>`
     }
 `;
 
-export const ProjectCard = styled.div<{ reverse?: boolean }>`
+export const ProjectCard = styled.div`
     display:  grid;
     grid-template-columns: 1fr 1.5fr;
     border-radius: 12px;
@@ -95,10 +95,6 @@ export const ProjectCard = styled.div<{ reverse?: boolean }>`
     color: ${theme.palette.fontColor};
     gap: 40px;
     max-width: 1000px;
-
-    ${({ reverse }) => reverse && css`
-        
-    `};
 
     @media (max-width: ${theme.breakPoints.mobileMd}px) {
         grid-template-columns: 1fr;
