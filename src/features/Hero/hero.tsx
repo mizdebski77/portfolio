@@ -62,7 +62,7 @@ export const Hero = () => {
                             <motion.div
                                 initial={{ opacity: 0, x: "-100vh" }}
                                 animate={{ opacity: 1, x: 0 }}
-                                viewport={{ once: false }}
+                                viewport={{ once: true }}
                                 transition={{
                                     duration: 1,
                                     delay: index * 0.2,

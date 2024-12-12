@@ -13,9 +13,10 @@ import {
 } from "../../common/components/components";
 import { useState } from "react";
 import { skills, techLinks } from "../../core/arrays";
+import { motion } from "framer-motion";
 
 export const Technologies = () => {
-    const [activeType, setActiveType] = useState("Frontend Technologies");
+    const [activeType, setActiveType] = useState("Frontend");
 
     const filteredSkills = skills.filter(
         (skills) => skills.type === activeType
@@ -44,9 +45,21 @@ export const Technologies = () => {
                 </LinksWrapper>
                 <TechWrapper>
                     {filteredSkills.map((skill, index) => (
-                        <TechIcon key={index}>
+                        <TechIcon
+                            key={index}
+                            style={{
+                                color: `${skill.color}`,
+                                boxShadow: `0 0 20px 0 ${skill.color}`,
+                                border: `4px solid ${skill.color}`,
+                            }}
+                        >
                             {skill.icon}
-                            <span style={{ fontSize: "18px" }}>
+                            <span
+                                style={{
+                                    fontSize: "16px",
+                                    color: `${skill.color}`,
+                                }}
+                            >
                                 {skill.text}
                             </span>
                         </TechIcon>

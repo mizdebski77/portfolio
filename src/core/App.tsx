@@ -14,6 +14,7 @@ function App() {
             <Portfolio />
             <Border />
             <Technologies />
+            <Border />
         </ThemeProvider>
     );
 }

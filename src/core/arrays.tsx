@@ -1,5 +1,5 @@
 import { FolderOpenDot, Mail } from "lucide-react";
-import { FaHtml5 } from "react-icons/fa";
+import { FaHtml5, FaTrello } from "react-icons/fa";
 import { FaCss3 } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { SiTypescript } from "react-icons/si";
@@ -211,181 +211,143 @@ export const projects = [
 export const skills = [
     {
         type: "Frontend",
-        icon: <FaReact style={{ margin: "0 auto", color: "#61DAFB" }} />,
-        text: <span style={{ margin: "0 auto", color: "#61DAFB" }}>React</span>,
+        icon: <FaReact style={{ margin: "0 auto" }} />,
+        text: <span style={{ margin: "0 auto" }}>React</span>,
+        color: "#61DAFB",
     },
     {
         type: "Frontend",
-        icon: <SiRedux style={{ margin: "0 auto", color: "#764ABC" }} />,
-        text: <span style={{ margin: "0 auto", color: "#764ABC" }}>Redux</span>,
+        icon: <SiRedux style={{ margin: "0 auto" }} />,
+        text: <span style={{ margin: "0 auto" }}>Redux</span>,
+        color: "#764ABC",
     },
     {
         type: "Frontend",
-        icon: <SiNextdotjs style={{ margin: "0 auto", color: "#FFFFFF" }} />,
-        text: (
-            <span style={{ margin: "0 auto", color: "#FFFFFF" }}>Next.js</span>
-        ),
+        icon: <SiNextdotjs style={{ margin: "0 auto" }} />,
+        text: <span style={{ margin: "0 auto" }}>Next.js</span>,
+        color: "#FFFFFF",
     },
     {
         type: "Frontend",
-        icon: (
-            <TbBrandReactNative
-                style={{ margin: "0 auto", color: "#61DAFB" }}
-            />
-        ),
-        text: (
-            <span style={{ margin: "0 auto", color: "#61DAFB" }}>
-                React Native
-            </span>
-        ),
+        icon: <TbBrandReactNative style={{ margin: "0 auto" }} />,
+        text: <span style={{ margin: "0 auto" }}>React Native</span>,
+        color: "#61DAFB",
     },
     {
         type: "Frontend",
-        icon: <FaHtml5 style={{ margin: "0 auto", color: "#E34F26" }} />,
-        text: <span style={{ margin: "0 auto", color: "#E34F26" }}>HTML5</span>,
+        icon: <FaHtml5 style={{ margin: "0 auto" }} />,
+        text: <span style={{ margin: "0 auto" }}>HTML5</span>,
+        color: "#E34F26",
     },
     {
         type: "Frontend",
-        icon: <FaCss3 style={{ margin: "0 auto", color: "#1572B6" }} />,
-        text: <span style={{ margin: "0 auto", color: "#1572B6" }}>CSS3</span>,
+        icon: <FaCss3 style={{ margin: "0 auto" }} />,
+        text: <span style={{ margin: "0 auto" }}>CSS3</span>,
+        color: "#1572B6",
     },
     {
         type: "Frontend",
-        icon: <SiTypescript style={{ margin: "0 auto", color: "#3178C6" }} />,
-        text: (
-            <span style={{ margin: "0 auto", color: "#3178C6" }}>
-                TypeScript
-            </span>
-        ),
+        icon: <SiTypescript style={{ margin: "0 auto" }} />,
+        text: <span style={{ margin: "0 auto" }}>TypeScript</span>,
+        color: "#3178C6",
     },
     {
         type: "Frontend",
-        icon: (
-            <IoLogoJavascript style={{ margin: "0 auto", color: "#F7DF1E" }} />
-        ),
-        text: (
-            <span style={{ margin: "0 auto", color: "#F7DF1E" }}>
-                JavaScript
-            </span>
-        ),
+        icon: <IoLogoJavascript style={{ margin: "0 auto" }} />,
+        text: <span style={{ margin: "0 auto" }}>JavaScript</span>,
+        color: "#F7DF1E",
     },
     {
         type: "Frontend",
-        icon: <SiTailwindcss style={{ margin: "0 auto", color: "#06B6D4" }} />,
-        text: (
-            <span style={{ margin: "0 auto", color: "#06B6D4" }}>
-                Tailwind CSS
-            </span>
-        ),
+        icon: <SiTailwindcss style={{ margin: "0 auto" }} />,
+        text: <span style={{ margin: "0 auto" }}>Tailwind CSS</span>,
+        color: "#06B6D4",
     },
     {
         type: "Frontend",
-        icon: (
-            <SiStyledcomponents
-                style={{ margin: "0 auto", color: "#DB7093" }}
-            />
-        ),
-        text: (
-            <span style={{ margin: "0 auto", color: "#DB7093" }}>
-                Styled Components
-            </span>
-        ),
+        icon: <SiStyledcomponents style={{ margin: "0 auto" }} />,
+        text: <span style={{ margin: "0 auto" }}>Styled Components</span>,
+        color: "#DB7093",
     },
     {
         type: "Frontend",
-        icon: <SiMui style={{ margin: "0 auto", color: "#007FFF" }} />,
-        text: (
-            <span style={{ margin: "0 auto", color: "#007FFF" }}>
-                Material-UI
-            </span>
-        ),
+        icon: <SiMui style={{ margin: "0 auto" }} />,
+        text: <span style={{ margin: "0 auto" }}>Material-UI</span>,
+        color: "#007FFF",
     },
     {
         type: "Frontend",
-        icon: <SiSass style={{ margin: "0 auto", color: "#CC6699" }} />,
-        text: <span style={{ margin: "0 auto", color: "#CC6699" }}>Sass</span>,
+        icon: <SiSass style={{ margin: "0 auto" }} />,
+        text: <span style={{ margin: "0 auto" }}>Sass</span>,
+        color: "#CC6699",
     },
 
     {
         type: "Backend",
-        icon: <FaNodeJs style={{ margin: "0 auto", color: "#339933" }} />,
-        text: (
-            <span style={{ margin: "0 auto", color: "#339933" }}>Node.js</span>
-        ),
+        icon: <FaNodeJs style={{ margin: "0 auto" }} />,
+        text: <span style={{ margin: "0 auto" }}>Node.js</span>,
+        color: "#339933",
     },
     {
         type: "Backend",
-        icon: <IoLogoFirebase style={{ margin: "0 auto", color: "#FFCA28" }} />,
-        text: (
-            <span style={{ margin: "0 auto", color: "#FFCA28" }}>Firebase</span>
-        ),
+        icon: <IoLogoFirebase style={{ margin: "0 auto" }} />,
+        text: <span style={{ margin: "0 auto" }}>Firebase</span>,
+        color: "#FFCA28",
     },
     {
         type: "Backend",
-        icon: <SiSupabase style={{ margin: "0 auto", color: "#3ECF8E" }} />,
-        text: (
-            <span style={{ margin: "0 auto", color: "#3ECF8E" }}>Supabase</span>
-        ),
+        icon: <SiSupabase style={{ margin: "0 auto" }} />,
+        text: <span style={{ margin: "0 auto" }}>Supabase</span>,
+        color: "#3ECF8E",
     },
 
     {
         type: "UI",
-        icon: <FaFigma style={{ margin: "0 auto", color: "#F24E1E" }} />,
-        text: <span style={{ margin: "0 auto", color: "#F24E1E" }}>Figma</span>,
+        icon: <FaFigma style={{ margin: "0 auto" }} />,
+        text: <span style={{ margin: "0 auto" }}>Figma</span>,
+        color: "#F24E1E",
     },
     {
         type: "UI",
-        icon: (
-            <SiAdobephotoshop style={{ margin: "0 auto", color: "#31A8FF" }} />
-        ),
-        text: (
-            <span style={{ margin: "0 auto", color: "#31A8FF" }}>
-                Adobe Photoshop
-            </span>
-        ),
+        icon: <SiAdobephotoshop style={{ margin: "0 auto" }} />,
+        text: <span style={{ margin: "0 auto" }}>Adobe Photoshop</span>,
+        color: "#31A8FF",
     },
     {
         type: "UI",
-        icon: (
-            <SiAdobepremierepro
-                style={{ margin: "0 auto", color: "#9999FF" }}
-            />
-        ),
-        text: (
-            <span style={{ margin: "0 auto", color: "#9999FF" }}>
-                Premiere Pro
-            </span>
-        ),
+        icon: <SiAdobepremierepro style={{ margin: "0 auto" }} />,
+        text: <span style={{ margin: "0 auto" }}>Premiere Pro</span>,
+        color: "#9999FF",
     },
     {
         type: "UI",
-        icon: (
-            <SiAdobeaftereffects
-                style={{ margin: "0 auto", color: "#9999FF" }}
-            />
-        ),
-        text: (
-            <span style={{ margin: "0 auto", color: "#9999FF" }}>
-                After Effects
-            </span>
-        ),
+        icon: <SiAdobeaftereffects style={{ margin: "0 auto" }} />,
+        text: <span style={{ margin: "0 auto" }}>After Effects</span>,
+        color: "#9999FF",
     },
 
     {
         type: "Teamwork",
-        icon: <FaGithub style={{ margin: "0 auto", color: "#FFFFFF" }} />,
-        text: (
-            <span style={{ margin: "0 auto", color: "#FFFFFF" }}>GitHub</span>
-        ),
+        icon: <FaGithub style={{ margin: "0 auto" }} />,
+        text: <span style={{ margin: "0 auto" }}>GitHub</span>,
+        color: "#FFFFFF",
     },
     {
         type: "Teamwork",
-        icon: <FaJira style={{ margin: "0 auto", color: "#0052CC" }} />,
-        text: <span style={{ margin: "0 auto", color: "#0052CC" }}>Jira</span>,
+        icon: <FaJira style={{ margin: "0 auto" }} />,
+        text: <span style={{ margin: "0 auto" }}>Jira</span>,
+        color: "#0052CC",
     },
     {
         type: "Teamwork",
-        icon: <DiScrum style={{ margin: "0 auto", color: "#6A1B9A" }} />,
-        text: <span style={{ margin: "0 auto", color: "#6A1B9A" }}>Scrum</span>,
+        icon: <DiScrum style={{ margin: "0 auto" }} />,
+        text: <span style={{ margin: "0 auto" }}>Scrum</span>,
+        color: "#6A1B9A",
+    },
+    {
+        type: "Teamwork",
+        icon: <FaTrello style={{ margin: "0 auto" }} />,
+        text: <span style={{ margin: "0 auto" }}>Trello</span>,
+        color: "#0079BF",
     },
 ];

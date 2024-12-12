@@ -21,6 +21,10 @@ export const TechContainer = styled.div`
     max-width: 1200px;
     margin: 0 auto;
     padding: 40px;
+
+    @media (max-width: ${theme.breakPoints.mobileMd}px) {
+        padding: 40px 12px;
+    }
 `;
 
 export const TechWrapper = styled.div`
@@ -28,8 +32,8 @@ export const TechWrapper = styled.div`
     gap: 40px;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    margin-top: 40px;
 `;
-
 
 export const TechTitle = styled.p`
     font-size: 28px;
@@ -55,4 +59,16 @@ export const TechIcon = styled.div`
     width: 100%;
     aspect-ratio: 1;
     box-shadow: 0 0 20px 0 ${theme.palette.secondColor};
+    transition: 0.4s ease-in-out;
+    cursor: pointer;
+
+    &:hover {
+        transform: rotate(20deg) ;
+    };
+
+    @media (max-width: ${theme.breakPoints.mobileMd}px) {
+        padding: 12px;
+        max-width: 120px;
+        font-size: 52px;
+    }
 `;
