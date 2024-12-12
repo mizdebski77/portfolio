@@ -17,6 +17,7 @@ function App() {
             <Technologies />
             <Border />
             <About />
+            <Border />
         </ThemeProvider>
     );
 }
