@@ -9,7 +9,7 @@ import {
     TextSection,
     Title,
     Wrapper,
-} from "./styledHero";
+} from "./sHero";
 import { TypeAnimation } from "react-type-animation";
 import profile from "../../common/Images/profile.png";
 import { motion } from "framer-motion";

@@ -13,7 +13,7 @@ import {
 
     TextWrapper,
     Wrapper,
-} from "./styledPortfolio";
+} from "./sPortfolio";
 import { Title } from "../components/components";
 import proj from "../../common/Images/proj.png";
 import { ExternalLink } from "lucide-react";
