@@ -36,7 +36,7 @@ export const CloseButton = styled(X)`
 export const Container = styled.div`
     background:${theme.palette.mainColor};
     padding: 120px;
-    max-width: 1200px;
+    max-width: 1000px;
     width: 100%;
     height: auto;
     box-shadow: 0 0 120px 0 ${theme.palette.secondColor};

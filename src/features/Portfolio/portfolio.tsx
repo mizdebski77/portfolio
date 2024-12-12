@@ -7,18 +7,21 @@ import {
     ProjectCard,
     ProjectImage,
     ProjectTitle,
+    ProjectTitleWrapper,
     Section,
     SectionTitle,
     Stack,
     StackWrapper,
     TextWrapper,
+    TitleContainer,
     Wrapper,
 } from "./sPortfolio";
 import { Title } from "../components/components";
 import proj from "../../common/Images/proj.png";
-import { ExternalLink, Images } from "lucide-react";
+import { ExternalLink, Github, Images } from "lucide-react";
 import { Fullscreen } from "./FullScreeen/fullscreen";
 import { projectsLinks } from "../../core/arrays";
+import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
 
 export const Portfolio = () => {
     const [activeType, setActiveType] = useState("Web Applications");
@@ -77,7 +80,7 @@ export const Portfolio = () => {
 
                 {filteredProjects.map((project) => (
                     <ProjectCard key={project.id}>
-                        <div>
+                        <div onClick={() => setFullScreen(true)}>
                             <ImgWrapper>
                                 <ImgText>
                                     <Images />
@@ -92,10 +95,24 @@ export const Portfolio = () => {
 
                         <div>
                             <TextWrapper>
-                                <ProjectTitle>
-                                    {project.title}
-                                    <ExternalLink />
-                                </ProjectTitle>
+                                <TitleContainer>
+                                    <ProjectTitleWrapper>
+                                        <ProjectTitle href="localhost:5173">
+                                            {project.title}
+                                        </ProjectTitle>
+                                        <FaExternalLinkAlt />
+                                    </ProjectTitleWrapper>
+                                    <ProjectTitleWrapper>
+                                        <FaGithub />
+                                        <ProjectTitle
+                                            style={{ fontWeight: "200" }}
+                                            href="localhost:5173"
+                                        >
+                                            GitHub
+                                        </ProjectTitle>
+                                    </ProjectTitleWrapper>
+                                </TitleContainer>
+
                                 <ProjectArticle>
                                     {project.description}
                                 </ProjectArticle>

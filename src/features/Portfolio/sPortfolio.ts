@@ -163,11 +163,80 @@ export const ProjectImage = styled.img`
 export const TextWrapper = styled.div`
     display: grid;
     justify-items: start;
+    width: 100%;
 `;
 
-export const ProjectTitle = styled.span`
-    font-size: 24px;
-    font-weight: 300;
+export const TitleContainer = styled.div`
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+`;
+
+export const ProjectTitleWrapper = styled.span`
+    display: flex;
+    gap:12px;
+    align-items: center;
+    background-image: linear-gradient(
+        to right,
+        ${theme.palette.secondColor},
+        ${theme.palette.secondColor} 50%,
+        ${theme.palette.fontColor} 50%
+    );
+    text-decoration: none;
+    background-image: linear-gradient(
+        to right,
+        ${theme.palette.secondColor},
+        ${theme.palette.secondColor} 50%,
+        ${theme.palette.fontColor} 50%
+    );
+    background-size: 200% 100%;
+    background-position: -100%;
+    position: relative;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    font-size: 20px;
+
+
+    &:before {
+        content: '';
+        background: ${theme.palette.secondColor};
+        display: block;
+        position: absolute;
+        bottom: -2px;
+        left: 0;
+        width: 0;
+        height: 1px;
+        transition: all 0.3s ease-in-out;
+    }
+
+    
+    &:before {
+        content: '';
+        background: ${theme.palette.secondColor};
+        display: block;
+        position: absolute;
+        bottom: -2px;
+        left: 0;
+        width: 0;
+        height: 1px;
+        transition: all 0.3s ease-in-out;
+        color: ${theme.palette.secondColor};
+    }
+
+    &:hover {
+        background-position: 0;
+        color: ${theme.palette.secondColor};
+    }
+
+    &:hover:before {
+        width: 100%;
+    }
+`;
+
+export const ProjectTitle = styled.a`
+    font-weight: 500;
     text-align: center;
     margin: 0 ;
     display: flex;
