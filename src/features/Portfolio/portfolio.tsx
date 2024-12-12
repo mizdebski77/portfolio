@@ -1,6 +1,5 @@
 import { useState } from "react";
 import {
-    Content,
     ImgText,
     ImgWrapper,
     LinksWrapper,
@@ -19,6 +18,7 @@ import { Title } from "../components/components";
 import proj from "../../common/Images/proj.png";
 import { ExternalLink, Images } from "lucide-react";
 import { Fullscreen } from "./FullScreeen/fullscreen";
+import { projectsLinks } from "../../core/arrays";
 
 export const Portfolio = () => {
     const [activeType, setActiveType] = useState("Web Applications");
@@ -63,41 +63,34 @@ export const Portfolio = () => {
             <Title>Projects</Title>
             <Section>
                 <LinksWrapper>
-                    <SectionTitle
-                        active={activeType === "Web Applications"}
-                        onClick={() => setActiveType("Web Applications")}
-                    >
-                        Web Applications
-                    </SectionTitle>
-                    <SectionTitle
-                        active={activeType === "Mobile Applications"}
-                        onClick={() => setActiveType("Mobile Applications")}
-                    >
-                        Mobile Applications
-                    </SectionTitle>
-                    <SectionTitle
-                        active={activeType === "Landing Pages"}
-                        onClick={() => setActiveType("Landing Pages")}
-                    >
-                        Landing Pages
-                    </SectionTitle>
+                    {projectsLinks.map((link) => (
+                        <SectionTitle
+                            key={link.type}
+                            active={activeType === link.type}
+                            onClick={() => setActiveType(link.type)}
+                        >
+                            {link.title}
+                        </SectionTitle>
+                    ))}
                 </LinksWrapper>
                 {fullScreen && <Fullscreen setFullScreen={setFullScreen} />}
 
                 {filteredProjects.map((project) => (
                     <ProjectCard key={project.id}>
-                        <ImgWrapper>
-                            <ImgText>
-                                <Images />
-                                View Gallery
-                            </ImgText>
-                            <ProjectImage
-                                onClick={() => setFullScreen(true)}
-                                src={project.image}
-                            />
-                        </ImgWrapper>
+                        <div>
+                            <ImgWrapper>
+                                <ImgText>
+                                    <Images />
+                                    View Gallery
+                                </ImgText>
+                                <ProjectImage
+                                    onClick={() => setFullScreen(true)}
+                                    src={project.image}
+                                />
+                            </ImgWrapper>{" "}
+                        </div>
 
-                        <Content>
+                        <div>
                             <TextWrapper>
                                 <ProjectTitle>
                                     {project.title}
@@ -112,7 +105,7 @@ export const Portfolio = () => {
                                     <Stack key={index}>{tech}</Stack>
                                 ))}
                             </StackWrapper>
-                        </Content>
+                        </div>
                     </ProjectCard>
                 ))}
             </Section>

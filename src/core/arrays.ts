@@ -10,4 +10,10 @@ export const socialLinks = [
 export const heroButtons = [
     { name: 'Contact', icon: Mail },
     { name: 'Projects', icon: FolderOpenDot }
+];
+
+export const projectsLinks = [
+    { title: "Web Applications", type: "Web Applications" },
+    { title: "Mobile Applications", type: "Mobile Applications" },
+    { title: "Landing Pages", type: "Landing Pages" },
 ]

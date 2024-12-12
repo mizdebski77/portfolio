@@ -13,11 +13,21 @@ export const Section = styled.div`
     justify-content: center;
     gap: 80px;
     max-width: 1500px;
+    padding: 12px;
+
+    @media (max-width: ${theme.breakPoints.mobileMd}px) {
+        gap: 12px;
+    }
 `;
 
 export const LinksWrapper = styled.div`
     display: flex;
     justify-content: space-evenly;
+
+    @media (max-width: ${theme.breakPoints.mobileMd}px) {
+        flex-direction: column;
+        text-align: center;
+    }
 `;
 
 export const SectionTitle = styled.h4<{ active?: boolean }>`
@@ -70,14 +80,26 @@ export const SectionTitle = styled.h4<{ active?: boolean }>`
             width: 100%;
         }
     `}
+
+    @media (max-width: ${theme.breakPoints.mobileMd}px) {
+        font-size: 18px;
+        margin:12px 0;
+    }
 `;
 
 export const ProjectCard = styled.div`
-    display: flex;
+    display:  grid;
+    grid-template-columns: 1fr 1.5fr;
     border-radius: 12px;
+    align-items: center;
     color: ${theme.palette.fontColor};
-    gap: 32px;
+    gap: 40px;
     max-width: 1200px;
+
+    @media (max-width: ${theme.breakPoints.mobileMd}px) {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    };
 `;
 
 export const ImgWrapper = styled.div`
@@ -85,12 +107,11 @@ export const ImgWrapper = styled.div`
     overflow: hidden;
     box-shadow: 0 0 60px 0px ${theme.palette.secondColor};
     cursor: pointer;
-    max-width: 600px;
-    width: 100%;
-    height: auto;
     border-radius: 12px ;
     border: 2px solid ${theme.palette.secondColor};
-    
+    aspect-ratio: 16/9;
+    max-width: 520px;
+    margin: 0 auto;
     &:hover img {
         transform: scale(1.1);
     };
@@ -98,6 +119,10 @@ export const ImgWrapper = styled.div`
     &:hover span {
         opacity: 1;
     };
+
+    @media (max-width: ${theme.breakPoints.mobileMd}px) {
+        min-width: 100px;
+    }
 `;
 
 export const ImgText = styled.span`
@@ -127,20 +152,15 @@ export const ImgText = styled.span`
 export const ProjectImage = styled.img`
     opacity: 1;
     display: block;
+    max-width: 540px;
     width: 100%;
     transition: 0.3s ease;
     object-fit: cover;
+    height: 100%;
+    
 `;
-
-
-
-export const Content = styled.div`
-
-`;
-
 
 export const TextWrapper = styled.div`
-    padding: 20px;
     display: grid;
     justify-items: start;
 `;
@@ -164,7 +184,13 @@ export const ProjectArticle = styled.p`
 
 export const StackWrapper = styled.div`
     display: flex; 
-    justify-content: space-evenly;
+    justify-content: start;
+    flex-wrap: wrap;
+    gap: 32px;
+
+    @media (max-width: ${theme.breakPoints.mobileMd}px) {
+        gap: 16px;
+    }
 `;
 
 export const Stack = styled.span`
@@ -174,4 +200,8 @@ export const Stack = styled.span`
     padding: 8px 12px;
     border-radius: 12px;
     box-shadow: 0 0 20px ${theme.palette.thirdColor};
+
+    @media (max-width: ${theme.breakPoints.mobileMd}px) {
+        font-size: 14px;
+    }
 `;
