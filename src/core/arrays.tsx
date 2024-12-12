@@ -24,6 +24,9 @@ import { SiVite } from "react-icons/si";
 import { SiSupabase } from "react-icons/si";
 import { FaNodeJs } from "react-icons/fa";
 import { SiSass } from "react-icons/si";
+import pl from "../common/Images/Languages/poland.svg";
+import gb from "../common/Images/Languages/english.svg";
+import ger from "../common/Images/Languages/german.svg";
 
 export const socialLinks = [
     { name: "GitHub", href: "https://github.com/mizdebski77", bg: "#242551" },
@@ -56,6 +59,29 @@ export const techLinks = [
     { title: "Backend Technologies", type: "Backend" },
     { title: "Teamwork", type: "Teamwork" },
     { title: "UI / UX", type: "UI" },
+];
+
+export const languages = [
+    {
+        id: 1,
+        name: "Polish",
+        level: "Native",
+        icon: pl,
+    },
+
+    {
+        id: 2,
+        name: "English",
+        level: "B2",
+        icon: gb,
+    },
+
+    {
+        id: 3,
+        name: "German",
+        level: "B1",
+        icon: ger,
+    },
 ];
 
 export const projects = [

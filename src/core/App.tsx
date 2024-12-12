@@ -5,6 +5,7 @@ import { GlobalStyles } from "./globalStyles";
 import { Portfolio } from "../features/Portfolio/portfolio";
 import { Technologies } from "../features/Technologies/technologies";
 import { Border } from "../common/components/components";
+import { About } from "../features/About/about";
 
 function App() {
     return (
@@ -15,6 +16,7 @@ function App() {
             <Border />
             <Technologies />
             <Border />
+            <About />
         </ThemeProvider>
     );
 }
