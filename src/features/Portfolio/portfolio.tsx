@@ -15,7 +15,7 @@ import {
     TitleContainer,
     Wrapper,
 } from "./sPortfolio";
-import { Title } from "../components/components";
+import { Title } from "../../common/components/components";
 import { Images } from "lucide-react";
 import { Fullscreen } from "./FullScreeen/fullscreen";
 import { projectsLinks } from "../../core/arrays";

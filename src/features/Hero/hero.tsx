@@ -16,7 +16,7 @@ import { motion } from "framer-motion";
 import { heroButtons, socialLinks } from "../../core/arrays";
 import VantaEffect from "../../core/vanta";
 import { FolderOpenDot, Mail } from "lucide-react";
-import { ButtonContent, Button } from "../components/components";
+import { ButtonContent, Button } from "../../common/components/components";
 
 export const Hero = () => {
     return (
