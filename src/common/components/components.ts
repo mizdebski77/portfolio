@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import { theme } from "../../core/theme";
 
 export const Button = styled.button`
@@ -54,4 +54,77 @@ export const Title = styled.h3`
     font-weight: inherit;
     color: ${theme.palette.fontColor};
     text-align: center;
+`;
+
+export const Border = styled.div`
+    border: 1px solid ${theme.palette.secondColor2};
+    box-shadow: 0 0 20px 0 ${theme.palette.secondColor};
+    margin: 80px;
+`;
+
+export const LinksWrapper = styled.div`
+    display: flex;
+    justify-content: space-evenly;
+
+    @media (max-width: ${theme.breakPoints.mobileMd}px) {
+        flex-direction: column;
+        text-align: center;
+    }
+`;
+
+export const SectionTitle = styled.h4<{ active?: boolean }>`
+    background-image: linear-gradient(
+        to right,
+        ${theme.palette.secondColor},
+        ${theme.palette.secondColor} 50%,
+        ${theme.palette.fontColor} 50%
+    );
+    background-size: 200% 100%;
+    background-position: -100%;
+    display: inline-block;
+    padding: 5px 0;
+    position: relative;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    font-size: 24px;
+    font-weight: 200;
+    padding: 8px 12px;
+
+    &:before {
+        content: '';
+        background: ${theme.palette.secondColor};
+        display: block;
+        position: absolute;
+        bottom: -2px;
+        left: 0;
+        width: 0;
+        height: 1px;
+        transition: all 0.3s ease-in-out;
+    }
+
+    &:hover {
+        background-position: 0;
+    }
+
+    &:hover:before {
+        width: 100%;
+    }
+
+    ${({ active }) => active && css`
+        background-position: 0;
+        &:before {
+            width: 100%;
+        }
+
+        &:hover:before {
+            width: 100%;
+        }
+    `}
+
+    @media (max-width: ${theme.breakPoints.mobileMd}px) {
+        font-size: 18px;
+        margin:12px 0;
+    }
 `;

@@ -4,6 +4,7 @@ import { theme } from "./theme";
 import { GlobalStyles } from "./globalStyles";
 import { Portfolio } from "../features/Portfolio/portfolio";
 import { Technologies } from "../features/Technologies/technologies";
+import { Border } from "../common/components/components";
 
 function App() {
     return (
@@ -11,6 +12,7 @@ function App() {
             <GlobalStyles />
             <Hero />
             <Portfolio />
+            <Border />
             <Technologies />
         </ThemeProvider>
     );

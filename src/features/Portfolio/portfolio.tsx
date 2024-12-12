@@ -2,25 +2,26 @@ import { useState } from "react";
 import {
     ImgText,
     ImgWrapper,
-    LinksWrapper,
     ProjectArticle,
     ProjectCard,
     ProjectImage,
     ProjectLink,
     Section,
-    SectionTitle,
     Stack,
     StackWrapper,
     TextWrapper,
     TitleContainer,
     Wrapper,
 } from "./sPortfolio";
-import { Title } from "../../common/components/components";
+import {
+    LinksWrapper,
+    SectionTitle,
+    Title,
+} from "../../common/components/components";
 import { Images } from "lucide-react";
 import { Fullscreen } from "./FullScreeen/fullscreen";
-import { projectsLinks } from "../../core/arrays";
+import { projects, projectsLinks } from "../../core/arrays";
 import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
-import { projects } from "../../common/Arrays/portfolio";
 import { motion } from "framer-motion";
 
 export const Portfolio = () => {
