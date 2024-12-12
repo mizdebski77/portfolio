@@ -87,7 +87,7 @@ export const SectionTitle = styled.h4<{ active?: boolean }>`
     }
 `;
 
-export const ProjectCard = styled.div`
+export const ProjectCard = styled.div<{ reverse?: boolean }>`
     display:  grid;
     grid-template-columns: 1fr 1.5fr;
     border-radius: 12px;
@@ -95,6 +95,10 @@ export const ProjectCard = styled.div`
     color: ${theme.palette.fontColor};
     gap: 40px;
     max-width: 1200px;
+
+    ${({ reverse }) => reverse && css`
+        
+    `};
 
     @media (max-width: ${theme.breakPoints.mobileMd}px) {
         grid-template-columns: 1fr;
@@ -105,10 +109,9 @@ export const ProjectCard = styled.div`
 export const ImgWrapper = styled.div`
     position: relative;
     overflow: hidden;
-    box-shadow: 0 0 60px 0px ${theme.palette.secondColor};
+    box-shadow: 0 0 40px 0px ${theme.palette.secondColor};
     cursor: pointer;
     border-radius: 12px ;
-    border: 2px solid ${theme.palette.secondColor};
     aspect-ratio: 16/9;
     max-width: 520px;
     margin: 0 auto;
@@ -256,6 +259,7 @@ export const StackWrapper = styled.div`
     justify-content: start;
     flex-wrap: wrap;
     gap: 32px;
+    row-gap: 20px;
 
     @media (max-width: ${theme.breakPoints.mobileMd}px) {
         gap: 16px;
