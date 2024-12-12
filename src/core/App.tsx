@@ -6,6 +6,7 @@ import { Portfolio } from "../features/Portfolio/portfolio";
 import { Technologies } from "../features/Technologies/technologies";
 import { Border } from "../common/components/components";
 import { About } from "../features/About/about";
+import { Contact } from "../features/Contact/contact";
 
 function App() {
     return (
@@ -17,6 +18,8 @@ function App() {
             <Technologies />
             <Border />
             <About />
+            <Border />
+            <Contact />
             <Border />
         </ThemeProvider>
     );
