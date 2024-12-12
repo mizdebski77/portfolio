@@ -11,6 +11,7 @@ import {
     Article,
     ArticleTitle,
     ArticleText,
+    Image,
 } from "./sAbout";
 import { Title } from "../../common/components/components";
 import Slider from "react-infinite-logo-slider";
@@ -23,7 +24,7 @@ export const About = () => {
             <Title>About me</Title>
             <Container>
                 <ImageWrapper>
-                    <img src={me} alt="Me" />
+                    <Image src={me} alt="Me" />
                 </ImageWrapper>
 
                 <Article>
@@ -55,7 +56,7 @@ export const About = () => {
             <LangWrapper>
                 <LangTitle>Languages</LangTitle>
                 <Slider
-                    width="400px"
+                    width="300px"
                     duration={15}
                     pauseOnHover={true}
                     blurBorders={false}

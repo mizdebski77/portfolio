@@ -60,6 +60,10 @@ export const Border = styled.div`
     border: 1px solid ${theme.palette.secondColor2};
     box-shadow: 0 0 20px 0 ${theme.palette.secondColor};
     margin: 80px;
+
+    @media (max-width: ${theme.breakPoints.mobileMd}px) {
+        margin: 40px;
+    }
 `;
 
 export const LinksWrapper = styled.div`
