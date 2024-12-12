@@ -16,7 +16,7 @@ export const Section = styled.div`
     padding: 12px;
 
     @media (max-width: ${theme.breakPoints.mobileMd}px) {
-        gap: 12px;
+        gap: 40px;
     }
 `;
 
@@ -173,11 +173,17 @@ export const TitleContainer = styled.div`
     display: flex;
     justify-content: space-between;
     width: 100%;
+
+    @media (max-width: ${theme.breakPoints.mobileMd}px) {
+        flex-direction: column;
+        gap: 20px;
+    }
 `;
 
-export const ProjectTitleWrapper = styled.span`
+export const ProjectLink = styled.a`
     display: flex;
     gap:12px;
+    color: white;
     align-items: center;
     background-image: linear-gradient(
         to right,
@@ -238,21 +244,16 @@ export const ProjectTitleWrapper = styled.span`
     }
 `;
 
-export const ProjectTitle = styled.a`
-    font-weight: 500;
-    text-align: center;
-    margin: 0 ;
-    display: flex;
-    gap: 20px;
-    align-items: center;
-`;
-
 export const ProjectArticle = styled.p`
     font-size: 16px;
     line-height: 20px;
     font-weight: 200;
     color: ${theme.palette.fontColor};
     text-align: justify;
+
+    @media (max-width: ${theme.breakPoints.mobileMd}px) {
+        font-size: 14px;
+    }
 `;
 
 export const StackWrapper = styled.div`
