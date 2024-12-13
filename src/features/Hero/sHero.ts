@@ -24,7 +24,7 @@ export const Wrapper = styled.div`
     };
 
     @media (max-width: ${theme.breakPoints.mobileMd}px){
-        padding: 40px 20px;
+        padding: 80px 20px;
     };
 `;
 

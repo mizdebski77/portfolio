@@ -27,6 +27,17 @@ import { SiSass } from "react-icons/si";
 import pl from "../common/Images/Languages/poland.svg";
 import gb from "../common/Images/Languages/english.svg";
 import ger from "../common/Images/Languages/german.svg";
+import { FaHome } from "react-icons/fa";
+import { GoProjectRoadmap } from "react-icons/go";
+import { CiUser } from "react-icons/ci";
+import { FaCode } from "react-icons/fa";
+
+export const navLinks = [
+    { text: "Home", to: "home", img: <FaHome /> },
+    { text: "Portfolio", to: "portfolio", img: <GoProjectRoadmap /> },
+    { text: "About Me", to: "about", img: <CiUser /> },
+    { text: "Skills", to: "skills", img: <FaCode /> },
+];
 
 export const socialLinks = [
     { name: "GitHub", href: "https://github.com/mizdebski77", bg: "#242551" },

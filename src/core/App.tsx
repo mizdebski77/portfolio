@@ -7,12 +7,14 @@ import { Technologies } from "../features/Technologies/technologies";
 import { Border } from "../common/components/components";
 import { About } from "../features/About/about";
 import { Contact } from "../features/Contact/contact";
+import { Navigation } from "../common/Navbar/navigation";
 
 function App() {
     return (
         <ThemeProvider theme={theme}>
             <GlobalStyles />
             <Hero />
+            <Navigation />
             <Portfolio />
             <Border />
             <Technologies />

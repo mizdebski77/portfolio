@@ -13,7 +13,7 @@ import {
     ButtonContent,
     Title,
 } from "../../common/components/components";
-import { MdEmail } from "react-icons/md";
+import { MdEmail, MdOutlineMessage } from "react-icons/md";
 import { FaRegUser } from "react-icons/fa";
 import { FaUser } from "react-icons/fa";
 import { MdOutlineEmail } from "react-icons/md";
@@ -52,8 +52,14 @@ export const Contact = () => {
                         E-Mail
                     </Legend>
                     <Input />
-                </Label>{" "}
-                <TextArea />
+                </Label>
+                <Label>
+                    <Legend>
+                        <MdOutlineMessage />
+                        Message
+                    </Legend>
+                    <TextArea />
+                </Label>
                 <Button style={{ margin: "auto" }}>
                     <ButtonContent>
                         <MdEmail />

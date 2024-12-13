@@ -14,16 +14,15 @@ import { TypeAnimation } from "react-type-animation";
 import profile from "../../common/Images/profile.png";
 import { motion } from "framer-motion";
 import { heroButtons, socialLinks } from "../../core/arrays";
-import VantaEffect from "../../core/vanta";
-import { FolderOpenDot, Mail } from "lucide-react";
 import { ButtonContent, Button } from "../../common/components/components";
+import VantaEffect from "../../core/vanta";
 
 export const Hero = () => {
     return (
         <>
             <VantaEffect />
 
-            <Wrapper>
+            <Wrapper id="home">
                 <TextSection>
                     <Title>
                         <TypeAnimation
@@ -94,7 +93,6 @@ export const Hero = () => {
                                 transition={{
                                     duration: 1,
                                     delay: index * 0.2,
-
                                 }}
                                 key={button.name}
                             >

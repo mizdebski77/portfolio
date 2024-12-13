@@ -33,7 +33,7 @@ export const Portfolio = () => {
     );
 
     return (
-        <Wrapper>
+        <Wrapper id="portfolio">
             <Title>Projects</Title>
             <Section>
                 <LinksWrapper>
