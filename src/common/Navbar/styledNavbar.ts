@@ -2,7 +2,6 @@
 import { css, styled } from "styled-components";
 import { theme } from "../../core/theme";
 import { Link } from 'react-scroll';
-import { style } from "framer-motion/client";
 
 export const Wrapper = styled.nav`
     padding: 20px 32px;
@@ -62,6 +61,7 @@ export const LanguageContainer = styled.div`
 export const LanguageIcon = styled.img`
     transform: scale(1.4);
 `;
+const activeLink = "active";
 
 export const NavLink = styled(Link) <{ active?: boolean }>`
     background-image: linear-gradient(
@@ -106,8 +106,9 @@ export const NavLink = styled(Link) <{ active?: boolean }>`
         width: 100%;
     }
 
-    ${({ active }) => active && css`
+    &.${activeLink} {
         background-position: 0;
+        color: ${theme.palette.secondColor};
         &:before {
             width: 100%;
         }
@@ -115,7 +116,8 @@ export const NavLink = styled(Link) <{ active?: boolean }>`
         &:hover:before {
             width: 100%;
         }
-    `}
+    };
+
 
     @media (max-width: ${theme.breakPoints.mobileMd}px) {
         font-size: 18px;

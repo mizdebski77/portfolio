@@ -3,7 +3,7 @@ import {
     ContactIconsWrapper,
     Image,
     ImageWrapper,
-    Link,
+    SocialLink,
     Role,
     Text,
     TextSection,
@@ -16,6 +16,7 @@ import { motion } from "framer-motion";
 import { heroButtons, socialLinks } from "../../core/arrays";
 import { ButtonContent, Button } from "../../common/components/components";
 import VantaEffect from "../../core/vanta";
+import { Link } from "react-scroll";
 
 export const Hero = () => {
     return (
@@ -70,7 +71,7 @@ export const Hero = () => {
                                 }}
                                 key={link.name}
                             >
-                                <Link
+                                <SocialLink
                                     style={{
                                         filter: `drop-shadow(0px 0px 8px ${link.bg})`,
                                     }}
@@ -85,22 +86,27 @@ export const Hero = () => {
 
                     <ButtonsWrapper>
                         {heroButtons.map((button, index) => (
-                            <Button
-                                as={motion.button}
-                                initial={{ y: "100vh" }}
-                                animate={{ y: 0 }}
-                                viewport={{ once: false }}
-                                transition={{
-                                    duration: 1,
-                                    delay: index * 0.2,
-                                }}
+                            <Link
                                 key={button.name}
+                                to={button.to}
+                                smooth={true}
                             >
-                                <ButtonContent>
-                                    <button.icon />
-                                    <span>{button.name}</span>
-                                </ButtonContent>
-                            </Button>
+                                <Button
+                                    as={motion.button}
+                                    initial={{ y: "100vh" }}
+                                    animate={{ y: 0 }}
+                                    viewport={{ once: false }}
+                                    transition={{
+                                        duration: 1,
+                                        delay: index * 0.2,
+                                    }}
+                                >
+                                    <ButtonContent>
+                                        <button.icon />
+                                        <span>{button.name}</span>
+                                    </ButtonContent>
+                                </Button>
+                            </Link>
                         ))}
                     </ButtonsWrapper>
                 </TextSection>

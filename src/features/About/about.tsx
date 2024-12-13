@@ -20,7 +20,7 @@ import me from "../../common/Images/profile.png";
 
 export const About = () => {
     return (
-        <Wrapper>
+        <Wrapper id="about">
             <Title>About me</Title>
             <Container>
                 <ImageWrapper>

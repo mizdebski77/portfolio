@@ -94,7 +94,7 @@ export const ContactIconsWrapper = styled.div`
     };
 `;
 
-export const Link = styled(SocialIcon)`
+export const SocialLink = styled(SocialIcon)`
     transition: 0.3s;
 
     &:hover {

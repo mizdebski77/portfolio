@@ -21,7 +21,7 @@ import { FaPhone } from "react-icons/fa6";
 
 export const Contact = () => {
     return (
-        <Wrapper>
+        <Wrapper id="contact">
             <Title>Contact</Title>
 
             <Form>

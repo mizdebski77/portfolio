@@ -22,7 +22,7 @@ export const Technologies = () => {
         (skills) => skills.type === activeType
     );
     return (
-        <Wrapper>
+        <Wrapper id="skills">
             <Title>Technologies</Title>
             <Article>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Non

@@ -31,12 +31,14 @@ import { FaHome } from "react-icons/fa";
 import { GoProjectRoadmap } from "react-icons/go";
 import { CiUser } from "react-icons/ci";
 import { FaCode } from "react-icons/fa";
+import { LuContact } from "react-icons/lu";
 
 export const navLinks = [
     { text: "Home", to: "home", img: <FaHome /> },
     { text: "Portfolio", to: "portfolio", img: <GoProjectRoadmap /> },
-    { text: "About Me", to: "about", img: <CiUser /> },
     { text: "Skills", to: "skills", img: <FaCode /> },
+    { text: "About Me", to: "about", img: <CiUser /> },
+    { text: "Contact", to: "contact", img: <LuContact /> },
 ];
 
 export const socialLinks = [
@@ -55,8 +57,8 @@ export const socialLinks = [
 ];
 
 export const heroButtons = [
-    { name: "Contact", type: "Frontend", icon: Mail },
-    { name: "Projects", type: "Frontend", icon: FolderOpenDot },
+    { name: "Contact", type: "Frontend", icon: Mail, to: "contact" },
+    { name: "Projects", type: "Frontend", icon: FolderOpenDot, to: "portfolio" },
 ];
 
 export const projectsLinks = [

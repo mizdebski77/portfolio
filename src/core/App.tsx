@@ -13,8 +13,8 @@ function App() {
     return (
         <ThemeProvider theme={theme}>
             <GlobalStyles />
-            <Hero />
             <Navigation />
+            <Hero />
             <Portfolio />
             <Border />
             <Technologies />

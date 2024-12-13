@@ -54,10 +54,6 @@ export const Title = styled.h3`
     font-weight: inherit;
     color: ${theme.palette.fontColor};
     text-align: center;
-
-    @media (max-width: ${theme.breakPoints.mobileMd}px) {
-        font-size: 32px;
-    }
 `;
 
 export const Border = styled.div`

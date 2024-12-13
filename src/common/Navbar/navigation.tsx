@@ -8,7 +8,6 @@ import {
 } from "./styledNavbar";
 import { languages, navLinks } from "../../core/arrays";
 import { MobileMenu } from "./MobileMenu/mobileMenu";
-import { FaComputerMouse } from "react-icons/fa6";
 
 export const Navigation = () => {
     return (
