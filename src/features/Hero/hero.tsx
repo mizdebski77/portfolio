@@ -37,7 +37,7 @@ export const Hero = () => {
                         as={motion.h2}
                         initial={{ x: "-30%", opacity: 0 }}
                         whileInView={{ x: 0, opacity: 1 }}
-                        viewport={{ once: false }}
+                        viewport={{ once: true }}
                         transition={{ duration: 1 }}
                     >
                         Frontend / Mobile App developer
@@ -46,7 +46,7 @@ export const Hero = () => {
                         as={motion.p}
                         initial={{ y: "30%", opacity: 0 }}
                         whileInView={{ y: 0, opacity: 1 }}
-                        viewport={{ once: false }}
+                        viewport={{ once: true }}
                         transition={{ duration: 1 }}
                     >
                         I'm an enthusiastic Frontend Developer with a strong
@@ -62,7 +62,7 @@ export const Hero = () => {
                             <motion.div
                                 initial={{ opacity: 0, x: "-100vh" }}
                                 animate={{ opacity: 1, x: 0 }}
-                                viewport={{ once: true }}
+                                viewport={{ once: false }}
                                 transition={{
                                     duration: 1,
                                     delay: index * 0.2,
@@ -115,7 +115,7 @@ export const Hero = () => {
                     as={motion.div}
                     initial={{ x: "30%", opacity: 0 }}
                     whileInView={{ x: 0, opacity: 1 }}
-                    viewport={{ once: false }}
+                    viewport={{ once: true }}
                     transition={{ duration: 1 }}
                 >
                     <Image src={profile} alt="Profile" />

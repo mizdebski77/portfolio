@@ -75,6 +75,7 @@ export const Text = styled.p`
     text-align: justify;
     margin: 0;
     letter-spacing: 2px;
+    line-height: 30px;
 
     @media (max-width: ${theme.breakPoints.mobileMd}px){
         font-size: 16px;
