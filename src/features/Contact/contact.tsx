@@ -31,34 +31,34 @@ export const Contact = () => {
                         <Legend>
                             <FaRegUser /> First Name
                         </Legend>
-                        <Input />
+                        <Input placeholder="Marcin" />
                     </Label>
                     <Label>
                         <Legend>
                             <FaUser /> Last Name
                         </Legend>
-                        <Input />
+                        <Input placeholder="Izdebski" />
                     </Label>
                 </InputWrapper>
                 <Label>
                     <Legend>
                         <FaPhone /> Phone Number
                     </Legend>
-                    <Input />
+                    <Input placeholder="123-456-789" />
                 </Label>
                 <Label>
                     <Legend>
                         <MdOutlineEmail />
                         E-Mail
                     </Legend>
-                    <Input />
+                    <Input placeholder="example@gmail.com" />
                 </Label>
                 <Label>
                     <Legend>
                         <MdOutlineMessage />
                         Message
                     </Legend>
-                    <TextArea />
+                    <TextArea placeholder="Your message here:" />
                 </Label>
                 <Button style={{ margin: "auto" }}>
                     <ButtonContent>

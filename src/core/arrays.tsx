@@ -20,7 +20,6 @@ import { SiReactquery } from "react-icons/si";
 import { SiTailwindcss } from "react-icons/si";
 import { IoLogoFirebase } from "react-icons/io5";
 import { SiNextdotjs } from "react-icons/si";
-import { SiVite } from "react-icons/si";
 import { SiSupabase } from "react-icons/si";
 import { FaNodeJs } from "react-icons/fa";
 import { SiSass } from "react-icons/si";
@@ -58,7 +57,12 @@ export const socialLinks = [
 
 export const heroButtons = [
     { name: "Contact", type: "Frontend", icon: Mail, to: "contact" },
-    { name: "Projects", type: "Frontend", icon: FolderOpenDot, to: "portfolio" },
+    {
+        name: "Projects",
+        type: "Frontend",
+        icon: FolderOpenDot,
+        to: "portfolio",
+    },
 ];
 
 export const projectsLinks = [
@@ -292,6 +296,12 @@ export const skills = [
     },
     {
         type: "Frontend",
+        icon: <FaAngular style={{ margin: "0 auto" }} />,
+        text: <span style={{ margin: "0 auto" }}>Angular</span>,
+        color: "#c63138",
+    },
+    {
+        type: "Frontend",
         icon: <IoLogoJavascript style={{ margin: "0 auto" }} />,
         text: <span style={{ margin: "0 auto" }}>JavaScript</span>,
         color: "#F7DF1E",
@@ -301,6 +311,12 @@ export const skills = [
         icon: <SiTailwindcss style={{ margin: "0 auto" }} />,
         text: <span style={{ margin: "0 auto" }}>Tailwind CSS</span>,
         color: "#06B6D4",
+    },
+    {
+        type: "Frontend",
+        icon: <SiReactquery style={{ margin: "0 auto" }} />,
+        text: <span style={{ margin: "0 auto" }}>Tanstack Query</span>,
+        color: "#eb4949",
     },
     {
         type: "Frontend",
