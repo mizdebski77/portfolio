@@ -1,12 +1,25 @@
-import { Container, LanguagesWrapper, NavLink, Wrapper } from "./styledNavbar";
-import { navLinks } from "../../core/arrays";
+import {
+    Container,
+    LanguageContainer,
+    LanguageIcon,
+    LanguagesWrapper,
+    NavLink,
+    Wrapper,
+} from "./styledNavbar";
+import { languages, navLinks } from "../../core/arrays";
 import { MobileMenu } from "./MobileMenu/mobileMenu";
 import { FaComputerMouse } from "react-icons/fa6";
 
 export const Navigation = () => {
     return (
         <Wrapper>
-            <LanguagesWrapper></LanguagesWrapper>
+            <LanguagesWrapper>
+                {languages.map((language) => (
+                    <LanguageContainer>
+                        <LanguageIcon src={language.icon} alt="Icon" />
+                    </LanguageContainer>
+                ))}
+            </LanguagesWrapper>
             <Container>
                 {navLinks.map((link) => (
                     <NavLink

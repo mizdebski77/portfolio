@@ -2,6 +2,7 @@
 import { css, styled } from "styled-components";
 import { theme } from "../../core/theme";
 import { Link } from 'react-scroll';
+import { style } from "framer-motion/client";
 
 export const Wrapper = styled.nav`
     padding: 20px 32px;
@@ -39,7 +40,27 @@ export const Container = styled.div`
     };
 `;
 export const LanguagesWrapper = styled.div`
+    display: flex;
+    gap: 40px;
+`;
 
+export const LanguageContainer = styled.div`
+    border-radius: 100%;
+    overflow: hidden;
+    max-width: 40px;
+    aspect-ratio: 1;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.3s;
+
+    &:hover {
+        transform: scale(1.06);
+    }
+`;
+
+export const LanguageIcon = styled.img`
+    transform: scale(1.4);
 `;
 
 export const NavLink = styled(Link) <{ active?: boolean }>`
