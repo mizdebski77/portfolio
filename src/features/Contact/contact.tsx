@@ -19,8 +19,43 @@ import { FaUser } from "react-icons/fa";
 import { MdOutlineEmail } from "react-icons/md";
 import { FaPhone } from "react-icons/fa6";
 import { motion } from "framer-motion";
+import { toast } from "react-toastify";
+import emailjs from "@emailjs/browser";
+import { useRef } from "react";
 
 export const Contact = () => {
+    const handleSuccess = () => {
+        toast.success("Message sent!");
+    };
+
+    const handleError = () => {
+        toast.error("Something went wrong");
+    };
+
+    const form = useRef<HTMLFormElement>(null);
+
+    const sendEmail = (event: React.FormEvent<HTMLFormElement>) => {
+        event.preventDefault();
+        const formElement = event.target as HTMLFormElement;
+
+        emailjs
+            .sendForm(
+                "service_6rgn80y",
+                "template_5buzkff",
+                formElement,
+                "umY-NBviFIQJGm59n"
+            )
+            .then((result) => {
+                if (result.text === "OK") {
+                    formElement.reset();
+                    handleSuccess();
+                }
+            })
+            .catch(() => {
+                handleError();
+            });
+    };
+
     return (
         <Wrapper id="contact">
             <Title
@@ -34,6 +69,8 @@ export const Contact = () => {
             </Title>
 
             <Form
+                onSubmit={sendEmail}
+                ref={form}
                 as={motion.form}
                 initial={{ x: "80px", opacity: 0 }}
                 whileInView={{ x: 0, opacity: 1 }}
@@ -46,34 +83,52 @@ export const Contact = () => {
                         <Legend>
                             <FaRegUser /> First Name
                         </Legend>
-                        <Input placeholder="Marcin" />
+                        <Input
+                            required
+                            type="text"
+                            name="name"
+                            placeholder="Marcin"
+                        />
                     </Label>
                     <Label>
                         <Legend>
                             <FaUser /> Last Name
                         </Legend>
-                        <Input placeholder="Izdebski" />
+                        <Input
+                            type="text"
+                            name="surname"
+                            placeholder="Izdebski"
+                        />
                     </Label>
                 </InputWrapper>
                 <Label>
                     <Legend>
                         <FaPhone /> Phone Number
                     </Legend>
-                    <Input placeholder="123-456-789" />
+                    <Input type="text" name="phone" placeholder="123-456-789" />
                 </Label>
                 <Label>
                     <Legend>
                         <MdOutlineEmail />
                         E-Mail
                     </Legend>
-                    <Input placeholder="example@gmail.com" />
+                    <Input
+                        required
+                        type="email"
+                        name="email"
+                        placeholder="example@gmail.com"
+                    />
                 </Label>
                 <Label>
                     <Legend>
                         <MdOutlineMessage />
                         Message
                     </Legend>
-                    <TextArea placeholder="Your message here:" />
+                    <TextArea
+                        required
+                        name="message"
+                        placeholder="Your message here:"
+                    />
                 </Label>
                 <Button style={{ margin: "auto" }}>
                     <ButtonContent>

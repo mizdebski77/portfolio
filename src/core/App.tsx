@@ -8,6 +8,8 @@ import { Border } from "../common/components/components";
 import { About } from "../features/About/about";
 import { Contact } from "../features/Contact/contact";
 import { Navigation } from "../common/Navbar/navigation";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function App() {
     return (
@@ -23,6 +25,17 @@ function App() {
             <Border />
             <Contact />
             <Border />
+            <ToastContainer
+                position="top-center"
+                autoClose={4000}
+                hideProgressBar={false}
+                newestOnTop={false}
+                closeOnClick
+                rtl={false}
+                pauseOnFocusLoss
+                draggable
+                pauseOnHover={false}
+            />
         </ThemeProvider>
     );
 }
