@@ -4,6 +4,7 @@ import { theme } from '../../core/theme';
 
 export const Wrapper = styled.div`
     padding: 120px;
+    min-height: 100vh;
 `;
 
 

@@ -18,13 +18,28 @@ import { FaRegUser } from "react-icons/fa";
 import { FaUser } from "react-icons/fa";
 import { MdOutlineEmail } from "react-icons/md";
 import { FaPhone } from "react-icons/fa6";
+import { motion } from "framer-motion";
 
 export const Contact = () => {
     return (
         <Wrapper id="contact">
-            <Title>Contact</Title>
+            <Title
+                as={motion.h4}
+                initial={{ y: "80px", opacity: 0 }}
+                whileInView={{ y: 0, opacity: 1 }}
+                viewport={{ once: false }}
+                transition={{ duration: 1 }}
+            >
+                Contact
+            </Title>
 
-            <Form>
+            <Form
+                as={motion.form}
+                initial={{ x: "80px", opacity: 0 }}
+                whileInView={{ x: 0, opacity: 1 }}
+                viewport={{ once: false }}
+                transition={{ duration: 1 }}
+            >
                 <FormTitle>Get in Touch</FormTitle>
                 <InputWrapper>
                     <Label>

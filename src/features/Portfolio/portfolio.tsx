@@ -34,9 +34,23 @@ export const Portfolio = () => {
 
     return (
         <Wrapper id="portfolio">
-            <Title>Projects</Title>
+            <Title
+                as={motion.h4}
+                initial={{ y: "80px", opacity: 0 }}
+                whileInView={{ y: 0, opacity: 1 }}
+                viewport={{ once: false }}
+                transition={{ duration: 1 }}
+            >
+                Projects
+            </Title>
             <Section>
-                <LinksWrapper>
+                <LinksWrapper
+                    as={motion.div}
+                    initial={{ x: "-80px", opacity: 0 }}
+                    whileInView={{ x: 0, opacity: 1 }}
+                    viewport={{ once: false }}
+                    transition={{ duration: 1 }}
+                >
                     {projectsLinks.map((link) => (
                         <SectionTitle
                             key={link.type}

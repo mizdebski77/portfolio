@@ -17,17 +17,38 @@ import { Title } from "../../common/components/components";
 import Slider from "react-infinite-logo-slider";
 import { languages } from "../../core/arrays";
 import me from "../../common/Images/profile.png";
+import { motion } from "framer-motion";
 
 export const About = () => {
     return (
         <Wrapper id="about">
-            <Title>About me</Title>
+            <Title
+                as={motion.h4}
+                initial={{ y: "80px", opacity: 0 }}
+                whileInView={{ y: 0, opacity: 1 }}
+                viewport={{ once: false }}
+                transition={{ duration: 1 }}
+            >
+                About me
+            </Title>
             <Container>
-                <ImageWrapper>
+                <ImageWrapper
+                    as={motion.div}
+                    initial={{ x: "-80px", opacity: 0 }}
+                    whileInView={{ x: 0, opacity: 1 }}
+                    viewport={{ once: false }}
+                    transition={{ duration: 1 }}
+                >
                     <Image src={me} alt="Me" />
                 </ImageWrapper>
 
-                <Article>
+                <Article
+                    as={motion.article}
+                    initial={{ x: "80px", opacity: 0 }}
+                    whileInView={{ x: 0, opacity: 1 }}
+                    viewport={{ once: false }}
+                    transition={{ duration: 1 }}
+                >
                     <ArticleTitle>About me:</ArticleTitle>
                     <ArticleText>
                         Lorem ipsum dolor, sit amet consectetur adipisicing
@@ -53,7 +74,13 @@ export const About = () => {
                     </ArticleText>
                 </Article>
             </Container>
-            <LangWrapper>
+            <LangWrapper
+                as={motion.div}
+                initial={{ y: "80px", opacity: 0 }}
+                whileInView={{ y: 0, opacity: 1 }}
+                viewport={{ once: false }}
+                transition={{ duration: 1 }}
+            >
                 <LangTitle>Languages</LangTitle>
                 <Slider
                     width="300px"

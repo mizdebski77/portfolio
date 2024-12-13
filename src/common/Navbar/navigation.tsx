@@ -25,7 +25,7 @@ export const Navigation = () => {
                         smooth={true}
                         key={link.text}
                         to={link.to}
-                        offset={-24}
+            
                         spy={true}
                     >
                         {link.img}

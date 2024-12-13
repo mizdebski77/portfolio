@@ -23,8 +23,22 @@ export const Technologies = () => {
     );
     return (
         <Wrapper id="skills">
-            <Title>Technologies</Title>
-            <Article>
+            <Title
+                as={motion.h4}
+                initial={{ y: "80px", opacity: 0 }}
+                whileInView={{ y: 0, opacity: 1 }}
+                viewport={{ once: false }}
+                transition={{ duration: 1 }}
+            >
+                Technologies
+            </Title>
+            <Article
+                as={motion.p}
+                initial={{ x: "80px", opacity: 0 }}
+                whileInView={{ x: 0, opacity: 1 }}
+                viewport={{ once: false }}
+                transition={{ duration: 1 }}
+            >
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Non
                 iusto provident porro nam dolorum maiores similique deleniti,
                 obcaecati voluptates assumenda modi aperiam, architecto
@@ -32,7 +46,13 @@ export const Technologies = () => {
             </Article>
 
             <TechContainer>
-                <LinksWrapper>
+                <LinksWrapper
+                    as={motion.div}
+                    initial={{ x: "-80px", opacity: 0 }}
+                    whileInView={{ x: 0, opacity: 1 }}
+                    viewport={{ once: false }}
+                    transition={{ duration: 1 }}
+                >
                     {techLinks.map((link) => (
                         <SectionTitle
                             key={link.type}
@@ -43,7 +63,13 @@ export const Technologies = () => {
                         </SectionTitle>
                     ))}
                 </LinksWrapper>
-                <TechWrapper>
+                <TechWrapper
+                    as={motion.div}
+                    initial={{ y: "80px", opacity: 0 }}
+                    whileInView={{ y: 0, opacity: 1 }}
+                    viewport={{ once: false }}
+                    transition={{ duration: 1 }}
+                >
                     {filteredSkills.map((skill, index) => (
                         <TechIcon
                             key={index}
