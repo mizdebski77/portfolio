@@ -18,16 +18,22 @@ export const Navigation = () => {
         i18n.changeLanguage(lang);
     };
 
+    const currentLanguage = i18n.language;
+
     return (
         <Wrapper>
             <LanguagesWrapper>
-                {languages.map((language) => (
-                    <LanguageContainer
-                        onClick={() => changeLanguage(language.translation)}
-                    >
-                        <LanguageIcon src={language.icon} alt="Icon" />
-                    </LanguageContainer>
-                ))}
+                {languages.map((language) => {
+                    return (
+                        <LanguageContainer
+                            key={language.translation}
+                            onClick={() => changeLanguage(language.translation)}
+                            isActive={currentLanguage === language.translation}
+                        >
+                            <LanguageIcon src={language.icon} alt="Icon" />
+                        </LanguageContainer>
+                    );
+                })}
             </LanguagesWrapper>
             <Container>
                 {navLinks.map((link) => (
