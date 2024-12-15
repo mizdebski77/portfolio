@@ -18,8 +18,11 @@ import Slider from "react-infinite-logo-slider";
 import { languages } from "../../core/arrays";
 import me from "../../common/Images/profile.png";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 export const About = () => {
+    const { t } = useTranslation();
+
     return (
         <Wrapper id="about">
             <Title
@@ -29,7 +32,7 @@ export const About = () => {
                 viewport={{ once: false }}
                 transition={{ duration: 1 }}
             >
-                About me
+                {t("about.title")}
             </Title>
             <Container>
                 <ImageWrapper
@@ -81,7 +84,7 @@ export const About = () => {
                 viewport={{ once: false }}
                 transition={{ duration: 1 }}
             >
-                <LangTitle>Languages</LangTitle>
+                <LangTitle>{t("about.langTitle")}</LangTitle>
                 <Slider
                     width="300px"
                     duration={15}
@@ -91,9 +94,7 @@ export const About = () => {
                     {languages.map((language) => (
                         <Language key={language.id}>
                             <LangImg src={language.icon} alt="any" />
-                            <LangSpan>
-                                {language.name} - {language.level}
-                            </LangSpan>
+                            <LangSpan>{t(language.name)}</LangSpan>
                         </Language>
                     ))}
                 </Slider>

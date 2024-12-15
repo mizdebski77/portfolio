@@ -81,24 +81,21 @@ export const techLinks = [
 export const languages = [
     {
         id: 1,
-        name: "Polish",
-        level: "Native",
+        name: "about.langTitle3",
         icon: pl,
         translation: "pl",
     },
 
     {
         id: 2,
-        name: "English",
-        level: "B2",
+        name: "about.langTitle1",
         icon: gb,
         translation: "en",
     },
 
     {
         id: 3,
-        name: "German",
-        level: "B1",
+        name: "about.langTitle2",
         icon: ger,
         translation: "ger",
     },
