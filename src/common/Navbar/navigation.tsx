@@ -17,7 +17,7 @@ export const Navigation = () => {
     const changeLanguage = (lang: any) => {
         i18n.changeLanguage(lang);
     };
-    
+
     return (
         <Wrapper>
             <LanguagesWrapper>

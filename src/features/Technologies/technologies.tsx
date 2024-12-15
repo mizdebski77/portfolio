@@ -14,9 +14,11 @@ import {
 import { useState } from "react";
 import { skills, techLinks } from "../../core/arrays";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 export const Technologies = () => {
     const [activeType, setActiveType] = useState("Frontend");
+    const { t } = useTranslation();
 
     const filteredSkills = skills.filter(
         (skills) => skills.type === activeType
@@ -30,7 +32,7 @@ export const Technologies = () => {
                 viewport={{ once: false }}
                 transition={{ duration: 1 }}
             >
-                Technologies
+                {t("technologies.title")}
             </Title>
             <Article
                 as={motion.p}
@@ -59,7 +61,7 @@ export const Technologies = () => {
                             active={activeType === link.type}
                             onClick={() => setActiveType(link.type)}
                         >
-                            {link.title}
+                            {t(link.title)}
                         </SectionTitle>
                     ))}
                 </LinksWrapper>

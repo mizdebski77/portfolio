@@ -66,16 +66,16 @@ export const heroButtons = [
 ];
 
 export const projectsLinks = [
-    { title: "Web Applications", type: "Web Applications" },
-    { title: "Mobile Applications", type: "Mobile Applications" },
-    { title: "Landing Pages", type: "Landing Pages" },
+    { title: "projects.link1", type: "Web Applications" },
+    { title: "projects.link2", type: "Mobile Applications" },
+    { title: "projects.link3", type: "Landing Pages" },
 ];
 
 export const techLinks = [
-    { title: "Frontend Technologies", type: "Frontend" },
-    { title: "Backend Technologies", type: "Backend" },
-    { title: "Teamwork", type: "Teamwork" },
-    { title: "UI / UX", type: "UI" },
+    { title: "technologies.category1", type: "Frontend" },
+    { title: "technologies.category2", type: "Backend" },
+    { title: "technologies.category3", type: "Teamwork" },
+    { title: "technologies.category4", type: "UI" },
 ];
 
 export const languages = [

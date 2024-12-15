@@ -23,6 +23,7 @@ import { Fullscreen } from "./FullScreeen/fullscreen";
 import { projects, projectsLinks } from "../../core/arrays";
 import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 export const Portfolio = () => {
     const [activeType, setActiveType] = useState("Web Applications");
@@ -31,6 +32,8 @@ export const Portfolio = () => {
     const filteredProjects = projects.filter(
         (project) => project.type === activeType
     );
+
+    const { t } = useTranslation();
 
     return (
         <Wrapper id="portfolio">
@@ -41,7 +44,7 @@ export const Portfolio = () => {
                 viewport={{ once: false }}
                 transition={{ duration: 1 }}
             >
-                Projects
+                {t("projects.title")}
             </Title>
             <Section>
                 <LinksWrapper
@@ -57,7 +60,7 @@ export const Portfolio = () => {
                             active={activeType === link.type}
                             onClick={() => setActiveType(link.type)}
                         >
-                            {link.title}
+                            {t(link.title)}
                         </SectionTitle>
                     ))}
                 </LinksWrapper>
