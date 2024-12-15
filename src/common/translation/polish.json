@@ -26,6 +26,8 @@
         "category4": "UI / UX"
     },
     "contact": {
+        "title": "Kontakt",
+        "description": "Skontaktuj się ze mną",
         "name": "Imię",
         "last": "Nazwisko",
         "number": "Numer telefonu",

@@ -26,6 +26,8 @@
         "category4": "UI / UX"
     },
     "contact": {
+        "title": "Kontakt",
+        "description": "Kontaktieren Sie uns",
         "name": "Vorname",
         "last": "Nachname",
         "number": "Telefonnummer",

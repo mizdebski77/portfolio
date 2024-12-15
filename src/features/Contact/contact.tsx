@@ -22,8 +22,11 @@ import { motion } from "framer-motion";
 import { toast } from "react-toastify";
 import emailjs from "@emailjs/browser";
 import { useRef } from "react";
+import { useTranslation } from "react-i18next";
 
 export const Contact = () => {
+    const { t } = useTranslation();
+
     const handleSuccess = () => {
         toast.success("Message sent!");
     };
@@ -65,7 +68,7 @@ export const Contact = () => {
                 viewport={{ once: false }}
                 transition={{ duration: 1 }}
             >
-                Contact
+                {t("contact.title")}
             </Title>
 
             <Form
@@ -77,11 +80,12 @@ export const Contact = () => {
                 viewport={{ once: false }}
                 transition={{ duration: 1 }}
             >
-                <FormTitle>Get in Touch</FormTitle>
+                <FormTitle>{t("contact.description")}</FormTitle>
                 <InputWrapper>
                     <Label>
                         <Legend>
-                            <FaRegUser /> First Name
+                            <FaRegUser />
+                            {t("contact.name")}
                         </Legend>
                         <Input
                             required
@@ -92,7 +96,7 @@ export const Contact = () => {
                     </Label>
                     <Label>
                         <Legend>
-                            <FaUser /> Last Name
+                            <FaUser /> {t("contact.last")}
                         </Legend>
                         <Input
                             type="text"
@@ -103,7 +107,7 @@ export const Contact = () => {
                 </InputWrapper>
                 <Label>
                     <Legend>
-                        <FaPhone /> Phone Number
+                        <FaPhone /> {t("contact.number")}
                     </Legend>
                     <Input type="text" name="phone" placeholder="123-456-789" />
                 </Label>
@@ -122,7 +126,7 @@ export const Contact = () => {
                 <Label>
                     <Legend>
                         <MdOutlineMessage />
-                        Message
+                        {t("contact.message")}
                     </Legend>
                     <TextArea
                         required
@@ -133,7 +137,7 @@ export const Contact = () => {
                 <Button style={{ margin: "auto" }}>
                     <ButtonContent>
                         <MdEmail />
-                        <span>Send message</span>
+                        <span>{t("contact.button")}</span>
                     </ButtonContent>
                 </Button>
             </Form>

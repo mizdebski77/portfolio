@@ -5,7 +5,8 @@ export const Button = styled.button`
     position: relative;
     gap: 12px;
     height: 3rem;
-    width: 10rem;
+    width: auto;
+    padding: 0 32px;
     overflow: hidden;
     border: 1px solid ${theme.palette.secondColor};
     color: ${theme.palette.secondColor};
@@ -13,6 +14,7 @@ export const Button = styled.button`
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2), 0 1px 3px rgba(0, 0, 0, 0.1);
     transition: color 0.3s, box-shadow 0.3s;
     border-radius: 12px;
+    white-space: nowrap;
 
     &::before {
         content: '';
@@ -34,7 +36,7 @@ export const Button = styled.button`
     }
 
     &:hover::before {
-        height: 320%;
+        height: 400%;
         transform: translateY(-50%) rotate(45deg);
         color: white;
     }
@@ -46,6 +48,7 @@ export const ButtonContent = styled.span`
     justify-content: center;
     gap: 12px;
     position: relative;
+
     z-index: 2;
 `;
 
