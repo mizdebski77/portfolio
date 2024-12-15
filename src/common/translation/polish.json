@@ -1,0 +1,35 @@
+{
+    "navbar": {
+        "home": "Strona główna",
+        "portfolio": "Portfolio",
+        "skills": "Umiejętności",
+        "about": "O mnie",
+        "contact": "Kontakt"
+    },
+    "hero": {
+        "title": "Frontend / Mobile app developer",
+        "subtitle": "Jestem entuzjastycznym Frontend Developerem z pasją do nowych technologii i głębokim zaangażowaniem w naukę Reacta. Jestem bardzo zmotywowany i szybko się uczę. Obecnie aktywnie poszukuję nowych możliwości pracy, aby rozwijać swoje umiejętności i przyczyniać się do innowacyjnych projektów.",
+        "cta1": "Kontakt",
+        "cta2": "Projekty"
+    },
+    "projects": {
+        "title": "Projekty",
+        "link1": "Aplikacje webowe",
+        "link2": "Aplikacje mobilne",
+        "link3": "Strony docelowe"
+    },
+    "technologies": {
+        "title": "Technologie",
+        "category1": "Technologie Frontendowe",
+        "category2": "Technologie Backendowe",
+        "category3": "Praca zespołowa",
+        "category4": "UI / UX"
+    },
+    "contact": {
+        "name": "Imię",
+        "last": "Nazwisko",
+        "number": "Numer telefonu",
+        "message": "Wiadomość",
+        "button": "Wyślij wiadomość"
+    }
+}

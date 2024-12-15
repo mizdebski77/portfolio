@@ -1,0 +1,35 @@
+{
+    "navbar": {
+        "home": "Startseite",
+        "portfolio": "Portfolio",
+        "skills": "Fähigkeiten",
+        "about": "Über mich",
+        "contact": "Kontakt"
+    },
+    "hero": {
+        "title": "Frontend / Mobile-App Entwickler",
+        "subtitle": "Ich bin ein begeisterter Frontend-Entwickler mit einer starken Leidenschaft für neue Technologien und einem tiefen Engagement für das Erlernen von React. Ich bin hoch motiviert und lerne schnell. Derzeit suche ich aktiv nach neuen Jobmöglichkeiten, um meine Fähigkeiten weiter zu verbessern und an innovativen Projekten mitzuwirken.",
+        "cta1": "Kontakt",
+        "cta2": "Projekte"
+    },
+    "projects": {
+        "title": "Projekte",
+        "link1": "Webanwendungen",
+        "link2": "Mobile Anwendungen",
+        "link3": "Landingpages"
+    },
+    "technologies": {
+        "title": "Technologien",
+        "category1": "Frontend-Technologien",
+        "category2": "Backend-Technologien",
+        "category3": "Teamarbeit",
+        "category4": "UI / UX"
+    },
+    "contact": {
+        "name": "Vorname",
+        "last": "Nachname",
+        "number": "Telefonnummer",
+        "message": "Nachricht",
+        "button": "Nachricht senden"
+    }
+}

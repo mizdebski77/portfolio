@@ -8,13 +8,23 @@ import {
 } from "./styledNavbar";
 import { languages, navLinks } from "../../core/arrays";
 import { MobileMenu } from "./MobileMenu/mobileMenu";
+import { useTranslation } from "react-i18next";
 
 export const Navigation = () => {
+    const { i18n } = useTranslation();
+    const { t } = useTranslation();
+
+    const changeLanguage = (lang: any) => {
+        i18n.changeLanguage(lang);
+    };
+    
     return (
         <Wrapper>
             <LanguagesWrapper>
                 {languages.map((language) => (
-                    <LanguageContainer>
+                    <LanguageContainer
+                        onClick={() => changeLanguage(language.translation)}
+                    >
                         <LanguageIcon src={language.icon} alt="Icon" />
                     </LanguageContainer>
                 ))}
@@ -25,12 +35,11 @@ export const Navigation = () => {
                         smooth={true}
                         key={link.text}
                         to={link.to}
-            
                         spy={true}
                     >
                         {link.img}
 
-                        {link.text}
+                        {t(link.text)}
                     </NavLink>
                 ))}
             </Container>

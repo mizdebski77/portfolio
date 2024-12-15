@@ -33,11 +33,11 @@ import { FaCode } from "react-icons/fa";
 import { LuContact } from "react-icons/lu";
 
 export const navLinks = [
-    { text: "Home", to: "home", img: <FaHome /> },
-    { text: "Portfolio", to: "portfolio", img: <GoProjectRoadmap /> },
-    { text: "Skills", to: "skills", img: <FaCode /> },
-    { text: "About Me", to: "about", img: <CiUser /> },
-    { text: "Contact", to: "contact", img: <LuContact /> },
+    { text: "navbar.home", to: "home", img: <FaHome /> },
+    { text: "navbar.portfolio", to: "portfolio", img: <GoProjectRoadmap /> },
+    { text: "navbar.skills", to: "skills", img: <FaCode /> },
+    { text: "navbar.about", to: "about", img: <CiUser /> },
+    { text: "navbar.contact", to: "contact", img: <LuContact /> },
 ];
 
 export const socialLinks = [
@@ -56,9 +56,9 @@ export const socialLinks = [
 ];
 
 export const heroButtons = [
-    { name: "Contact", type: "Frontend", icon: Mail, to: "contact" },
+    { name: "hero.cta1", type: "Frontend", icon: Mail, to: "contact" },
     {
-        name: "Projects",
+        name: "hero.cta2",
         type: "Frontend",
         icon: FolderOpenDot,
         to: "portfolio",
@@ -84,6 +84,7 @@ export const languages = [
         name: "Polish",
         level: "Native",
         icon: pl,
+        translation: "pl",
     },
 
     {
@@ -91,6 +92,7 @@ export const languages = [
         name: "English",
         level: "B2",
         icon: gb,
+        translation: "en",
     },
 
     {
@@ -98,6 +100,7 @@ export const languages = [
         name: "German",
         level: "B1",
         icon: ger,
+        translation: "ger",
     },
 ];
 

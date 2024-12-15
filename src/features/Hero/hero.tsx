@@ -17,8 +17,10 @@ import { heroButtons, socialLinks } from "../../core/arrays";
 import { ButtonContent, Button } from "../../common/components/components";
 import VantaEffect from "../../core/vanta";
 import { Link } from "react-scroll";
+import { useTranslation } from "react-i18next";
 
 export const Hero = () => {
+    const { t } = useTranslation();
     return (
         <>
             <VantaEffect />
@@ -40,7 +42,7 @@ export const Hero = () => {
                         viewport={{ once: true }}
                         transition={{ duration: 1 }}
                     >
-                        Frontend / Mobile App developer
+                        {t("hero.title")}
                     </Role>
                     <Text
                         as={motion.p}
@@ -49,12 +51,7 @@ export const Hero = () => {
                         viewport={{ once: true }}
                         transition={{ duration: 1 }}
                     >
-                        I'm an enthusiastic Frontend Developer with a strong
-                        passion for new technologies and a deep commitment to
-                        learning React. I am highly motivated and thrive on
-                        being a fast learner. Currently, I am actively seeking
-                        new job opportunities to further enhance my skills and
-                        contribute to innovative projects.
+                        {t("hero.subtitle")}
                     </Text>
 
                     <ContactIconsWrapper>
@@ -103,7 +100,7 @@ export const Hero = () => {
                                 >
                                     <ButtonContent>
                                         <button.icon />
-                                        <span>{button.name}</span>
+                                        <span> {t(button.name)}</span>
                                     </ButtonContent>
                                 </Button>
                             </Link>
