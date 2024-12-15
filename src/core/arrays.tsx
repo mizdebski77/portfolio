@@ -115,8 +115,7 @@ export const projects = [
             "Git",
             "Tanstack-query",
         ],
-        thumbnaill:
-            "https://jeiqdktodpczzgzkiocp.supabase.co/storage/v1/object/public/Portfolio/YCM.png",
+        image: "https://jeiqdktodpczzgzkiocp.supabase.co/storage/v1/object/public/Portfolio/tatry.png",
         liveUrl: "https://ycm-orcin.vercel.app/",
         codeUrl: "",
     },
