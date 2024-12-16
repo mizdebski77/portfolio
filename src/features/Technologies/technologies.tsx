@@ -41,10 +41,7 @@ export const Technologies = () => {
                 viewport={{ once: false }}
                 transition={{ duration: 1 }}
             >
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Non
-                iusto provident porro nam dolorum maiores similique deleniti,
-                obcaecati voluptates assumenda modi aperiam, architecto
-                distinctio tempore. Deserunt voluptatibus tenetur rem officiis.
+                {t("technologies.subtitle")}
             </Article>
 
             <TechContainer>
