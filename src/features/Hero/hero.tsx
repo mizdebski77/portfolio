@@ -24,7 +24,6 @@ export const Hero = () => {
     return (
         <>
             <VantaEffect />
-
             <Wrapper id="home">
                 <TextSection>
                     <Title>

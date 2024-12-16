@@ -8,7 +8,7 @@ export const Wrapper = styled.div`
     display: grid;
     max-width: 1920px;
     margin: 0 auto;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1.1fr 1fr;
     align-items: center;
     justify-content: center;
     padding: 40px 120px; 
