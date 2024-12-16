@@ -15,7 +15,7 @@ export const Container = styled.article`
     display: grid;
     max-width: 1500px;
     margin: 0 auto;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1.5fr;
     align-items: center;
     gap: 20px;
 
@@ -41,7 +41,7 @@ export const ImageWrapper = styled.div`
 `;
 
 export const Article = styled.article`
-    max-width: 700px;
+    max-width: 800px;
 `;
 
 export const ArticleTitle = styled.span`
@@ -58,7 +58,7 @@ export const ArticleText = styled.p`
     font-size: 18px;
     color: ${theme.palette.fontColor};
     font-weight: 200;
-    text-align: justify;
+    text-align: left;
     line-height: 24px;
     opacity: 0.7;
 

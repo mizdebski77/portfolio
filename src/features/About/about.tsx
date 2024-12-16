@@ -1,4 +1,3 @@
-import React from "react";
 import {
     LangWrapper,
     Wrapper,
@@ -52,28 +51,45 @@ export const About = () => {
                     viewport={{ once: false }}
                     transition={{ duration: 1 }}
                 >
-                    <ArticleTitle>About me:</ArticleTitle>
+                    <ArticleTitle> {t("about.title")}:</ArticleTitle>
+                    <ArticleText>{t("about.description")}</ArticleText>
+
+                    <ArticleTitle>{t("about.educationSubtitle")}</ArticleTitle>
                     <ArticleText>
-                        Lorem ipsum dolor, sit amet consectetur adipisicing
-                        elit. Beatae quibusdam sunt voluptatem deleniti ad
-                        nesciunt eos earum totam debitis reiciendis! Repellendus
-                        ipsa soluta quod rerum ullam. Illum tenetur eius nemo?
+                        <b style={{ fontWeight: "400" }}>
+                            {t("about.educationUniversity")} /{" "}
+                            <i>10.2019 - 02.2023</i>
+                        </b>
+                        <p></p>
+                        <p>
+                            <b style={{ fontWeight: "400" }}>
+                                {t("about.education")}
+                            </b>
+                            / {t("about.educationTitle")}
+                        </p>
+
+                        {t("about.engineeringThesis")}
                     </ArticleText>
 
-                    <ArticleTitle>Education</ArticleTitle>
+                    <ArticleTitle> {t("about.coursesSubtitle")}</ArticleTitle>
                     <ArticleText>
-                        Lorem ipsum dolor, sit amet consectetur adipisicing
-                        elit. Beatae quibusdam sunt voluptatem deleniti ad
-                        nesciunt eos earum totam debitis reiciendis! Repellendus
-                        ipsa soluta quod rerum ullam. Illum tenetur eius nemo?
-                    </ArticleText>
+                        <b style={{ fontWeight: "400" }}>
+                            {t("about.course1Title")} / <i>02.2022 - 05.2022</i>{" "}
+                            / {t("about.course1Name")}
+                        </b>
+                        <p></p>
+                        <p>
+                            <b style={{ fontWeight: "400" }}></b>
+                        </p>
 
-                    <ArticleTitle>Courses</ArticleTitle>
-                    <ArticleText>
-                        Lorem ipsum dolor, sit amet consectetur adipisicing
-                        elit. Beatae quibusdam sunt voluptatem deleniti ad
-                        nesciunt eos earum totam debitis reiciendis! Repellendus
-                        ipsa soluta quod rerum ullam. Illum tenetur eius nemo?
+                        <b style={{ fontWeight: "400" }}>
+                            {t("about.course2Title")} / <i>09.2018 - 09.2019</i>{" "}
+                            / {t("about.course2Name")}
+                        </b>
+                        <p></p>
+                        <p>
+                            <b style={{ fontWeight: "400" }}></b>
+                        </p>
                     </ArticleText>
                 </Article>
             </Container>

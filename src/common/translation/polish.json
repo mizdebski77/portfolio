@@ -38,18 +38,20 @@
     "about": {
         "title": "O mnie",
         "description": "Frontend Developer z ponad 2-letnim doświadczeniem w tworzeniu nowoczesnych, responsywnych aplikacji webowych oraz skalowalnych rozwiązań full-stack. Specjalizuję się w React, TypeScript, Next.js, HTML & CSS, Redux oraz kontroli wersji za pomocą GitHub. Posiadam doświadczenie w tworzeniu aplikacji mobilnych oraz full-stackowych, wykorzystując technologie backendowe oraz integrację API. Z powodzeniem dostarczyłem różne projekty, w tym platformy e-commerce, systemy CRM, aplikacje do szkoleń, landing pages i rozwiązania mobilne, przyczyniając się do poprawy użyteczności i wydajności. Doświadczony w integracji API i dostarczaniu funkcjonalnych aplikacji, które są dostosowane do potrzeb użytkowników. Pracuję w metodykach Agile (Scrum) i używam narzędzi takich jak JIRA oraz Trello. Pasjonuję się tworzeniem produktów, które łączą doskonałą funkcjonalność z przyjaznym interfejsem użytkownika i są dostosowane do różnych platform.",
-        "educationUniversity": "Politechnika Śląska, Wydział Automatyki, Elektroniki i Informatyki 10.2019 - 02.2023",
+        "educationUniversity": "Politechnika Śląska, Wydział Automatyki, Elektroniki i Informatyki",
+        "educationSubtitle": "Edukacja",
+        "coursesSubtitle": "Kursy",
         "educationTitle": "Inżynier",
         "education": "Elektronika i telekomunikacja",
         "engineeringThesis": "Elektroniczna stacja do pomiaru odległości z wyświetlaczem na urządzeniu mobilnym – Projekt i realizacja stacji do pomiaru odległości w garażu z wyświetlaniem na ekranie urządzenia mobilnego",
         "course1Title": "YouCode",
-        "course1Name": "Kurs Frontend Developera 02.2022 - 05.2022",
-        "course2Title": "ProfiLingua Szkoła Językowa 09.2018 - 09.2019",
+        "course1Name": "Kurs Frontend Developera",
+        "course2Title": "ProfiLingua Szkoła Językowa",
         "course2Name": "Kurs języka niemieckiego",
         "langTitle": "Języki",
         "langTitle1": "Angielski - B2",
         "langTitle2": "Niemiecki - B1",
-        "langTitle3": "Polski - Native"
+        "langTitle3": "Polski - Język ojczysty"
     },
     "portfolio": {
         "project1": "",
