@@ -22,6 +22,7 @@ export const Navigation = () => {
 
     return (
         <Wrapper>
+  
             <LanguagesWrapper>
                 {languages.map((language) => {
                     return (
@@ -49,7 +50,6 @@ export const Navigation = () => {
                     </NavLink>
                 ))}
             </Container>
-
             <MobileMenu />
         </Wrapper>
     );

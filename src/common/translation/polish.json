@@ -7,8 +7,8 @@
         "contact": "Kontakt"
     },
     "hero": {
-        "title": "Frontend / Mobile app developer",
-        "subtitle": "Jestem entuzjastycznym Frontend Developerem z pasją do nowych technologii i głębokim zaangażowaniem w naukę Reacta. Jestem bardzo zmotywowany i szybko się uczę. Obecnie aktywnie poszukuję nowych możliwości pracy, aby rozwijać swoje umiejętności i przyczyniać się do innowacyjnych projektów.",
+        "title": "Frontend / Mobile App Developer",
+        "subtitle": "Frontend Developer z ponad 2-letnim doświadczeniem w tworzeniu responsywnych aplikacji webowych, mobilnych oraz full-stack. Specjalizuję się w projektowaniu i dostarczaniu przyjaznych dla użytkownika, wydajnych rozwiązań dostosowanych do potrzeb klientów. Pasjonuję się budowaniem nowoczesnych, funkcjonalnych produktów, które łączą wydajność z doskonałą użytecznością. Pracuję w zespołach Agile, przyczyniając się do różnych projektów, od platform e-commerce po aplikacje dedykowane.",
         "cta1": "Kontakt",
         "cta2": "Projekty"
     },
@@ -16,12 +16,13 @@
         "title": "Projekty",
         "link1": "Aplikacje webowe",
         "link2": "Aplikacje mobilne",
-        "link3": "Strony landing page"
+        "link3": "Landing pages"
     },
     "technologies": {
         "title": "Technologie",
-        "category1": "Technologie Frontendowe",
-        "category2": "Technologie Backendowe",
+        "subtitle": "Posiadam doświadczenie w pracy z poniższymi technologiami, których używam do budowania nowoczesnych aplikacji webowych i mobilnych. Skupiam się na funkcjonalności, wydajności i intuicyjnym designie, aby spełniać potrzeby zarówno użytkowników, jak i firm.",
+        "category1": "Technologie frontendowe",
+        "category2": "Technologie backendowe",
         "category3": "Praca zespołowa",
         "category4": "UI / UX"
     },
@@ -33,5 +34,31 @@
         "number": "Numer telefonu",
         "message": "Wiadomość",
         "button": "Wyślij wiadomość"
+    },
+    "about": {
+        "title": "O mnie",
+        "description": "Frontend Developer z ponad 2-letnim doświadczeniem w tworzeniu nowoczesnych, responsywnych aplikacji webowych oraz skalowalnych rozwiązań full-stack. Specjalizuję się w React, TypeScript, Next.js, HTML & CSS, Redux oraz kontroli wersji za pomocą GitHub. Posiadam doświadczenie w tworzeniu aplikacji mobilnych oraz full-stackowych, wykorzystując technologie backendowe oraz integrację API. Z powodzeniem dostarczyłem różne projekty, w tym platformy e-commerce, systemy CRM, aplikacje do szkoleń, landing pages i rozwiązania mobilne, przyczyniając się do poprawy użyteczności i wydajności. Doświadczony w integracji API i dostarczaniu funkcjonalnych aplikacji, które są dostosowane do potrzeb użytkowników. Pracuję w metodykach Agile (Scrum) i używam narzędzi takich jak JIRA oraz Trello. Pasjonuję się tworzeniem produktów, które łączą doskonałą funkcjonalność z przyjaznym interfejsem użytkownika i są dostosowane do różnych platform.",
+        "educationUniversity": "Politechnika Śląska, Wydział Automatyki, Elektroniki i Informatyki 10.2019 - 02.2023",
+        "educationTitle": "Inżynier",
+        "education": "Elektronika i telekomunikacja",
+        "engineeringThesis": "Elektroniczna stacja do pomiaru odległości z wyświetlaczem na urządzeniu mobilnym – Projekt i realizacja stacji do pomiaru odległości w garażu z wyświetlaniem na ekranie urządzenia mobilnego",
+        "course1Title": "YouCode",
+        "course1Name": "Kurs Frontend Developera 02.2022 - 05.2022",
+        "course2Title": "ProfiLingua Szkoła Językowa 09.2018 - 09.2019",
+        "course2Name": "Kurs języka niemieckiego",
+        "langTitle": "Języki",
+        "langTitle1": "Angielski - B2",
+        "langTitle2": "Niemiecki - B1",
+        "langTitle3": "Polski - Native"
+    },
+    "portfolio": {
+        "project1": "",
+        "project2": "Trek Shop to sklep internetowy oparty na własnym API napisanym w Node.js, hostowanym online, dzięki czemu jest dostępny dla użytkowników. Projekt stworzony z myślą o miłośnikach outdooru, oferujący szeroką gamę produktów, w tym sprzęt wspinaczkowy, odzież outdoorową i inne.",
+        "project3": "Easy Employ to portal dedykowany pracodawcom i osobom szukającym pracy. Aplikacja w trakcie budowy.",
+        "project4": "The Movies Browser to platforma, na której możesz łatwo wyszukać swoje ulubione filmy, popularnych aktorów i aktorki. Możesz także znaleźć więcej informacji o obsadzie.",
+        "project5": "Aplikacja pogodowa to aplikacja jednosesyjna, która pozwala na sprawdzenie aktualnej pogody w dowolnym mieście na świecie. Aplikacja pobiera dane z 'https://www.weatherapi.com/'.",
+        "project6": "Aplikacja została stworzona na zlecenie firmy Futurum Technology. W trakcie projektu współpracowałem z doświadczonym projektantem Figma oraz kompetentnym backend developerem. Udostępniony link pokazuje podstawową wersję aplikacji, ponieważ pełna wersja została dostarczona wyłącznie firmie. Celem aplikacji było pokazanie umiejętności stworzenia aplikacji CRUD (Create, Read, Update, Delete) do zarządzania kampaniami.",
+        "project7": "To do list to aplikacja webowa, która pozwala tworzyć listę zadań do wykonania w najbliższym czasie. Na górze aplikacji znajduje się pasek nawigacyjny, który przenosi do strony z zadaniami lub strony autora.",
+        "project8": "Aplikacja szkoleniowa została stworzona wyłącznie dla Think1st, a wersja demonstracyjna jest dostępna, ponieważ pełna wersja była dostosowana specjalnie do potrzeb firmy. Podczas projektu współpracowałem ściśle z doświadczonym projektantem Figma oraz backend developerem. Projekt to aplikacja webowa do rejestracji na sesje szkoleniowe. Użytkownicy mogą podać swoje dane, takie jak imię, nazwisko, adres e-mail i zdjęcie oraz wybrać dzień i godzinę szkolenia. Aplikacja pobiera także dane o dniach wolnych z Ninja API, aby wykluczyć niedziele oraz święta jako dni dostępne do wyboru i oznaczyć je jako niedostępne, wyświetlając informacje o tych dniach."
     }
 }
