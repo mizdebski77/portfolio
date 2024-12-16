@@ -22,7 +22,7 @@ import { useTranslation } from "react-i18next";
 export const Hero = () => {
     const { t } = useTranslation();
     return (
-        <>
+        <div style={{ background: "#06061a" }}>
             <VantaEffect />
             <Wrapper id="home">
                 <TextSection>
@@ -117,6 +117,6 @@ export const Hero = () => {
                     <Image src={profile} alt="Profile" />
                 </ImageWrapper>
             </Wrapper>
-        </>
+        </div>
     );
 };
