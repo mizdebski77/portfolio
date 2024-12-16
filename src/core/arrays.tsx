@@ -124,8 +124,7 @@ export const projects = [
         id: 2,
         name: "Trek-Shop",
         type: "Web Applications",
-        description:
-            "Trek Shop is an online store that relies on its own API written in Node.js and hosted online, making it accessible to users. This project was created with outdoor enthusiasts in mind, offering a rich variety of products, including climbing equipment, outdoor clothing, and more.",
+        description: "portfolio.project2",
         tags: [
             "React",
             "Redux",
@@ -143,8 +142,7 @@ export const projects = [
         id: 3,
         name: "Easy-Employ",
         type: "Web Applications",
-        description:
-            "Easy Employ is a portal dedicated to employers and those looking for a job. Application under construction.",
+        description: "portfolio.project3",
         tags: [
             "React",
             "Typescript",
@@ -162,8 +160,7 @@ export const projects = [
         id: 4,
         name: "Movie Browser",
         type: "Web Applications",
-        description:
-            "The Movies Browser is a platform you can easily search for your favorite movies, popular actors and actresses. Also you can find more information about the cast.",
+        description: "portfolio.project4",
         tags: [
             "React",
             "Redux",
@@ -181,8 +178,7 @@ export const projects = [
         id: 7,
         name: "Wheather App",
         type: "Web Applications",
-        description:
-            'The weather app is a one-page application that allows you to check the current weather in any city on earth. The app fetches data from "https://www.weatherapi.com/".',
+        description: "portfolio.project5",
         tags: [
             "React",
             "Redux",
@@ -200,8 +196,7 @@ export const projects = [
         id: 8,
         name: "Crud App",
         type: "Web Applications",
-        description:
-            "The application was developed as per the directive from Futurum Technology. Throughout the project, I collaborated with a seasoned Figma designer and a proficient backend developer. The link provided showcases the basic version of the application, as the complete version was exclusively delivered to the company. The purpose of the app is to demonstrate the ability to develop a CRUD (Create, Read, Update, Delete) application for campaign management.",
+        description: "portfolio.project6",
         tags: ["Angular", "Scss", "Javascript", "Html", "Git"],
         image: "https://jeiqdktodpczzgzkiocp.supabase.co/storage/v1/object/public/Portfolio/Crud.png",
         liveUrl: "https://crudaplication.netlify.app/",
@@ -212,8 +207,7 @@ export const projects = [
         id: 9,
         name: "To do app",
         type: "Web Applications",
-        description:
-            '"To do list" is a web application which allows you to create a list of tasks that need to be done in the near future. At the top of application you can see a navigation toolbar which can take you to tasks page or to an author page.',
+        description: "portfolio.project7",
         tags: ["React", "Styled-components", "Redux", "Redux saga", "Git"],
         image: "https://jeiqdktodpczzgzkiocp.supabase.co/storage/v1/object/public/Portfolio/tasksList.png",
         liveUrl: "https://mizdebski77.github.io/Tasks-List-ReactJS/",
@@ -241,8 +235,7 @@ export const projects = [
         id: 12,
         name: "Think1st training app",
         type: "Web Applications",
-        description:
-            "The training application was developed exclusively for Think1st, with this being a demo version as the full version was tailored specifically for the company`s needs. Throughout the project, I collaborated closely with a seasoned Figma designer and an expert backend developer. This project is a web application designed to facilitate sign-ups for training sessions. Users can provide necessary information such as their name, surname, email address, and photo, and select a training day and time. The application also fetches holiday data from the Ninja API to exclude Sundays and public holidays as training days, marking them as unavailable for selection and providing information about the holidays next to their names.",
+        description: "portfolio.project8",
         tags: ["React", "Tailwind css", "Tanstack query", "Api", "Git"],
         image: "https://jeiqdktodpczzgzkiocp.supabase.co/storage/v1/object/public/Portfolio/ta.png",
         liveUrl: "https://mizdebski77.github.io/Training-App/",

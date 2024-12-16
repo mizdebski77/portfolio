@@ -115,7 +115,7 @@ export const Portfolio = () => {
                                 </TitleContainer>
 
                                 <ProjectArticle>
-                                    {project.description}
+                                    {t(project.description)}
                                 </ProjectArticle>
                             </TextWrapper>
 
