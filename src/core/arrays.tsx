@@ -67,8 +67,8 @@ export const heroButtons = [
 
 export const projectsLinks = [
     { title: "projects.link1", type: "Web Applications" },
-    { title: "projects.link2", type: "Mobile Applications" },
-    { title: "projects.link3", type: "Landing Pages" },
+    // { title: "projects.link2", type: "Mobile Applications" },
+    { title: "projects.link3", type: "Landing page" },
 ];
 
 export const techLinks = [
@@ -102,6 +102,89 @@ export const languages = [
 ];
 
 export const projects = [
+    {
+        id: 1,
+        name: "Polskie paulownie",
+        description: "portfolio.landing1",
+        type: "Landing page",
+        tags: [
+            "React",
+            "Firebase",
+            "TypeScript",
+            "Tanstack query",
+            "Git",
+        ],
+        image: "https://jeiqdktodpczzgzkiocp.supabase.co/storage/v1/object/public/Portfolio/paulownie.png",
+        liveUrl: "https://polskiepaulownie.pl",
+        codeUrl: "",
+    },
+    {
+        id: 2,
+        name: "SB pracownia",
+        description: "portfolio.landing2",
+        type: "Landing page",
+        tags: [
+            "React",
+            "React router",
+            "TypeScript",
+            "Supabase",
+            "Tailwind CSS",
+            "Git",
+        ],
+        image: "https://jeiqdktodpczzgzkiocp.supabase.co/storage/v1/object/public/Portfolio/Sb.png",
+        liveUrl: "https://www.sbpracownia.pl",
+        codeUrl: "",
+    },
+    {
+        id: 3,
+        name: "mirosławstach.pl",
+        description: "portfolio.landing3",
+        type: "Landing page",
+        tags: [
+            "React",
+            "React Router",
+            "TypeScript",
+            "Styled-Components",
+            "Git",
+        ],
+        image: "https://jeiqdktodpczzgzkiocp.supabase.co/storage/v1/object/public/Portfolio/Mstach.png",
+        liveUrl: "https://www.miroslawstach.pl",
+        codeUrl: "",
+    },
+
+    {
+        id: 4,
+        name: "Portfolio",
+        description: "portfolio.landing5",
+        type: "Landing page",
+        tags: [
+            "React",
+            "Three.js",
+            "TypeScript",
+            "Framer motion",
+            "Git",
+        ],
+        image: "https://jeiqdktodpczzgzkiocp.supabase.co/storage/v1/object/public/Portfolio/Portfolio%20(1).png",
+        liveUrl: "https://marcinizdebski.pl/",
+        codeUrl: "",
+    },
+
+    {
+        id: 4,
+        name: "Optimize performance",
+        description: "portfolio.landing4",
+        type: "Landing page",
+        tags: [
+            "React",
+            "Styled components",
+            "React router",
+            "Framer motion",
+            "Git",
+        ],
+        image: "https://jeiqdktodpczzgzkiocp.supabase.co/storage/v1/object/public/Portfolio/optimize.png",
+        liveUrl: "https://www.optimizeperformance.pl",
+        codeUrl: "",
+    },
     {
         id: 1,
         name: "Tatry Razem",
