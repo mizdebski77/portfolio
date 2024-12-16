@@ -6,10 +6,11 @@ import Hamburger from "hamburger-react";
 import { AnimatePresence, motion } from "framer-motion";
 import { navLinks } from "../../../core/arrays";
 import { NavLink } from "../styledNavbar";
+import { useTranslation } from "react-i18next";
 
 export const MobileMenu = () => {
     const [isOpen, setIsOpen] = useState(false);
-
+    const {t} = useTranslation();
     const toggleMenu = () => {
         setIsOpen(!isOpen);
     };
@@ -49,9 +50,15 @@ export const MobileMenu = () => {
                     >
                         <Container>
                             {navLinks.map((link) => (
-                                <NavLink key={link.text} to={link.to}>
+                                <NavLink
+                                    smooth={true}
+                                    key={link.text}
+                                    to={link.to}
+                                    spy={true}
+                                >
                                     {link.img}
-                                    {link.text}
+
+                                    {t(link.text)}
                                 </NavLink>
                             ))}
                         </Container>

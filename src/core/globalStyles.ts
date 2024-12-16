@@ -14,6 +14,6 @@ html {
   body {
     background: #06061a;
     font-family: "Inter", sans-serif;
-
+    overflow-x: hidden;
   }
 `;

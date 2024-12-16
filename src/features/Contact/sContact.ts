@@ -4,7 +4,12 @@ import { theme } from '../../core/theme';
 
 export const Wrapper = styled.div`
     padding: 40px;
+    overflow: hidden;
     min-height: 100vh;
+
+    @media (max-width: ${theme.breakPoints.mobileMd}px) {
+        padding: 12px;
+    }
 `;
 
 
@@ -24,6 +29,10 @@ export const Form = styled.form`
     box-shadow: 0 0 400px 0 ${theme.palette.secondColor6};
     border-radius: 12px;
     border: 4px solid ${theme.palette.secondColor6};
+    
+    @media (max-width: ${theme.breakPoints.mobileMd}px) {
+        padding: 24px 12px;
+    }
 `;
 
 export const Label = styled.label`
@@ -44,6 +53,10 @@ export const InputWrapper = styled.div`
     display: flex;
     justify-content: space-between;
     gap: 32px;
+
+    @media (max-width: ${theme.breakPoints.mobileMd}px) {
+        flex-direction: column;
+    }
 `;
 
 export const Input = styled.input`

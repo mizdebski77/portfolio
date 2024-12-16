@@ -4,7 +4,7 @@ import { theme } from "../../core/theme";
 import { Link } from 'react-scroll';
 
 export const Wrapper = styled.nav`
-    padding: 20px 32px;
+    padding: 20px 52px;
     position: fixed;
     z-index: 10;
     top: 0;
@@ -16,13 +16,10 @@ export const Wrapper = styled.nav`
     align-items: center;
     transition: transform 0.3s ease;
 
-    @media (max-width: ${theme.breakPoints.mobileMd}) {
+    @media (max-width: ${theme.breakPoints.mobileMd}px) {
         padding: 20px;
     };
 
-    @media (max-width: ${theme.breakPoints.mobileMd}) {
-        padding: 12px;
-    };
 `;
 
 
@@ -41,6 +38,10 @@ export const Container = styled.div`
 export const LanguagesWrapper = styled.div`
     display: flex;
     gap: 40px;
+
+    @media (max-width: ${theme.breakPoints.mobileMd}px) {
+      gap: 20px;
+    }
 `;
 
 export const LanguageContainer = styled.div<{ isActive?: boolean }>`
@@ -67,36 +68,40 @@ export const LanguageContainer = styled.div<{ isActive?: boolean }>`
             transform: none;
         };
     `};
+
+    @media (max-width: ${theme.breakPoints.mobileMd}px) {
+      max-width:32px;
+    }
 `;
 
 export const LanguageIcon = styled.img`
-transform: scale(1.4);
+    transform: scale(1.4);
 `;
+
 const activeLink = "active";
 
-export const NavLink = styled(Link) <{ active?: boolean }>`
-background - image: linear - gradient(
+export const NavLink = styled(Link)<{ active?: boolean }>`
+  background-image: linear-gradient(
     to right,
     ${theme.palette.secondColor},
-    ${theme.palette.secondColor} 50 %,
-    ${theme.palette.fontColor} 50 %
-    );
-background - size: 200 % 100 %;
-background - position: -100 %;
-display: flex;
-gap: 20px;
-padding: 5px 0;
-position: relative;
--webkit - background - clip: text;
--webkit - text - fill - color: transparent;
-transition: all 0.3s ease -in -out;
-cursor: pointer;
-font - size: 20px;
-font - weight: 400;
-padding: 8px 12px;
-color: white;
+    ${theme.palette.secondColor} 50%,
+    ${theme.palette.fontColor} 50%
+  );
+  background-size: 200% 100%;
+  background-position: -100%;
+  display: flex;
+  gap: 20px;
+  padding: 8px 12px;
+  position: relative;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 400;
+  color: white;
 
-    &:before {
+  &:before {
     content: '';
     background: ${theme.palette.secondColor};
     display: block;
@@ -105,33 +110,33 @@ color: white;
     left: 0;
     width: 0;
     height: 1px;
-    transition: all 0.3s ease -in -out;
-}
+    transition: all 0.3s ease-in-out;
+  }
 
-    &:hover {
-    background - position: 0;
+  &:hover {
+    background-position: 0;
     color: ${theme.palette.secondColor};
-}
+  }
 
-    &: hover:before {
-    width: 100 %;
-}
+  &:hover:before {
+    width: 100%;
+  }
 
-    &.${activeLink} {
-    background - position: 0;
+  &.${activeLink} {
+    background-position: 0;
     color: ${theme.palette.secondColor};
-        &:before {
-        width: 100 %;
+
+    &:before {
+      width: 100%;
     }
 
-        &: hover:before {
-        width: 100 %;
+    &:hover:before {
+      width: 100%;
     }
-};
+  }
 
-
-@media(max - width: ${theme.breakPoints.mobileMd}px) {
-    font - size: 18px;
+  @media (max-width: ${theme.breakPoints.mobileMd}px) {
+    font-size: 18px;
     margin: 12px 0;
-}
+  }
 `;

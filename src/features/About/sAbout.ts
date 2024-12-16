@@ -5,6 +5,7 @@ import Slider from 'react-infinite-logo-slider';
 export const Wrapper = styled.div`
     min-height: 100vh;
     padding: 40px;
+    overflow: hidden;
 
     @media (max-width: ${theme.breakPoints.mobileMd}px) {
         padding: 12px;
@@ -38,6 +39,10 @@ export const ImageWrapper = styled.div`
     display: flex;
     justify-content: center;
     aspect-ratio: 1;
+
+    @media (max-width: ${theme.breakPoints.mobileMd}px) {
+        max-width: 320px;
+    }
 `;
 
 export const Article = styled.article`

@@ -74,7 +74,6 @@ export const Text = styled.p`
     font-weight: 200;
     text-align: justify;
     margin: 0;
-    letter-spacing: 2px;
     line-height: 30px;
 
     @media (max-width: ${theme.breakPoints.mobileMd}px){
@@ -92,6 +91,7 @@ export const ContactIconsWrapper = styled.div`
 
     @media (max-width: ${theme.breakPoints.mobileMd}px){
         gap: 8px;
+        flex-wrap: wrap;
     };
 `;
 
@@ -118,7 +118,7 @@ export const ImageWrapper = styled.div`
     position: relative;
     margin: auto;
     box-shadow: 10px -60px 120px  5px ${theme.palette.secondColor6};
-    z-index: 10;
+    z-index: 7;
 
     @media (max-width: ${theme.breakPoints.mobileMd}px){
         max-width: 240px;
@@ -139,6 +139,10 @@ export const ButtonsWrapper = styled.div`
     justify-content: start;
     align-items: center;
     gap: 24px;
+
+    @media (max-width: ${theme.breakPoints.mobileMd}px) {
+        flex-direction: column;
+    }
 `;
 
 

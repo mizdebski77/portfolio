@@ -3,6 +3,7 @@ import { theme } from '../../core/theme';
 
 export const Wrapper = styled.section`
     min-height: 100vh;
+    overflow: hidden;
 `;
 
 export const Article = styled.p`
