@@ -1,6 +1,6 @@
 "use client"; // Wymusza klientowe zachowanie komponentu
 
-import React, { useState } from "react";
+import { useState } from "react";
 import { MobileWrapper, PhoneNavbar, Container } from "./styledMobileMenu";
 import Hamburger from "hamburger-react";
 import { AnimatePresence, motion } from "framer-motion";
@@ -10,7 +10,7 @@ import { useTranslation } from "react-i18next";
 
 export const MobileMenu = () => {
     const [isOpen, setIsOpen] = useState(false);
-    const {t} = useTranslation();
+    const { t } = useTranslation();
     const toggleMenu = () => {
         setIsOpen(!isOpen);
     };

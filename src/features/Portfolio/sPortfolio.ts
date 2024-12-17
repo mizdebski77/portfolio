@@ -1,4 +1,4 @@
-import styled, { css } from 'styled-components'
+import styled from 'styled-components'
 import { theme } from '../../core/theme';
 
 export const Wrapper = styled.section`

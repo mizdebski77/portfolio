@@ -2,7 +2,6 @@ import {
     Article,
     TechContainer,
     TechIcon,
-    TechTitle,
     TechWrapper,
     Wrapper,
 } from "./sTechnologies";

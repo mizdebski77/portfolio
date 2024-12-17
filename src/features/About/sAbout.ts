@@ -1,6 +1,5 @@
 import styled from 'styled-components'
 import { theme } from '../../core/theme';
-import Slider from 'react-infinite-logo-slider';
 
 export const Wrapper = styled.div`
     min-height: 100vh;
