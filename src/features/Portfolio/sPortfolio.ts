@@ -57,8 +57,10 @@ export const ImgWrapper = styled.div`
     }
 `;
 
-export const ImgText = styled.span`
+export const ImgText = styled.a`
     transition: 0.3s ease;
+    text-decoration: none;
+    color: ${theme.palette.fontColor};
     opacity: 0;
     position: absolute;
     top: 50%;

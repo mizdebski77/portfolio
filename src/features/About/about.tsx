@@ -15,9 +15,9 @@ import {
 import { Title } from "../../common/components/components";
 import Slider from "react-infinite-logo-slider";
 import { languages } from "../../core/arrays";
-import me from "../../common/Images/profile.png";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
+import profile from '../../common/Images/mountainsImg.jpg';
 
 export const About = () => {
     const { t } = useTranslation();
@@ -41,7 +41,7 @@ export const About = () => {
                     viewport={{ once: false }}
                     transition={{ duration: 1 }}
                 >
-                    <Image src={me} alt="Me" />
+                    <Image src={profile} alt="Me" />
                 </ImageWrapper>
 
                 <Article

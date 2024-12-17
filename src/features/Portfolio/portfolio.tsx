@@ -18,7 +18,7 @@ import {
     SectionTitle,
     Title,
 } from "../../common/components/components";
-import { Images } from "lucide-react";
+import { Images, Link } from "lucide-react";
 import { Fullscreen } from "./FullScreeen/fullscreen";
 import { projects, projectsLinks } from "../../core/arrays";
 import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
@@ -78,18 +78,16 @@ export const Portfolio = () => {
                         transition={{ duration: 1 }}
                         key={project.id}
                     >
-                        <div onClick={() => setFullScreen(true)}>
                             <ImgWrapper as={motion.div}>
-                                <ImgText>
-                                    <Images />
-                                    View Gallery
+                                <ImgText target="_blank" href={project.liveUrl}>
+                                    <Link />
+                                    View project
                                 </ImgText>
                                 <ProjectImage
-                                    onClick={() => setFullScreen(true)}
+                                    // onClick={() => setFullScreen(true)}
                                     src={project.image}
                                 />
                             </ImgWrapper>{" "}
-                        </div>
 
                         <div>
                             <TextWrapper>

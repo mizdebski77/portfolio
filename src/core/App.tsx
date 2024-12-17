@@ -36,7 +36,6 @@ function App() {
                         zIndex: -1, // Warstwa tła
                     }}
                 >
-                    {" "}
                     <Spline scene="https://prod.spline.design/5bFtyMz3cMihZPhZ/scene.splinecode" />
                 </div>
 

@@ -47,7 +47,7 @@ export const socialLinks = [
         href: "https://www.facebook.com/marcin.izdebski.7528",
         bg: "#1476ff",
     },
-    { name: "Email", href: "mailto:mizdebski123@gmail.com", bg: "#164a4a" },
+    { name: "Email", href: "mailto:mizdebski123@gmail.com", bg: "#ad3030" },
     {
         name: "LinkedIn",
         href: "https://www.linkedin.com/in/marcin-izdebski-63b7a026a/",
