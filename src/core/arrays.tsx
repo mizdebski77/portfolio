@@ -170,7 +170,7 @@ export const projects = [
     },
 
     {
-        id: 4,
+        id: 5,
         name: "Optimize performance",
         description: "portfolio.landing4",
         type: "Landing page",
@@ -188,7 +188,7 @@ export const projects = [
     {
         id: 1,
         name: "Tatry Razem",
-        description: "(Application under construction).",
+        description: "A full-stack application to help find companions for mountain hikes (Application under development).",
         type: "Web Applications",
         tags: [
             "Next.js",
