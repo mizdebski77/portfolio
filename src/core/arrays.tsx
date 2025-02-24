@@ -199,7 +199,7 @@ export const projects = [
             "Tanstack-query",
         ],
         image: "https://jeiqdktodpczzgzkiocp.supabase.co/storage/v1/object/public/Portfolio/tatry.png",
-        liveUrl: "https://ycm-orcin.vercel.app/",
+        liveUrl: "https://tatry-razem-theta.vercel.app/",
         codeUrl: "",
     },
 
